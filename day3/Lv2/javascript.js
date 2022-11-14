@@ -76,13 +76,13 @@ console.log(diff)
 console.log(`I am ${diff} years older than you.`)
 
 //13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
-let birthYear = prompt('enter Birth Year')
-birthYear >= 18
-? console.log('Allow to drive')
-: console.log('Wait till you are 18 above')
+let birthYear = prompt("enter Birth Year")
+let birthYearDiff = 2022-birthYear
+birthYearDiff >= 18 
+? console.log("Allow to drive") :  console.log("Wait till you are 18 and above")
 
 //15. Create a human readable time format using the Date time object
 let now = new Date()
-console.log(`${now.getFullYear()}-${now.getMonth() +1}-${now.getDay()} ${now.getHours()}:${now.getMinutes()}`)// YYYY-MM-DD HH:mm
-console.log(`${now.getDay()}-${now.getMonth() +1}-${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}`)// DD-MM-YYYY HH:mm
-console.log(`${now.getDay()}/${now.getMonth() +1}/${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}`)// DD/MM/YYYY HH:mm
+console.log(`${now.getFullYear()}-${now.getMonth() +1}-${now.getDate()} ${now.getHours()}:${now.getMinutes()}`)// YYYY-MM-DD HH:mm
+console.log(`${now.getDate()}-${now.getMonth() +1}-${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}`)// DD-MM-YYYY HH:mm
+console.log(`${now.getDate()}/${now.getMonth() +1}/${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}`)// DD/MM/YYYY HH:mm
