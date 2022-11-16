@@ -7,7 +7,7 @@
 
 let grade = prompt('Enter Your Score')
 if (grade >= 80 && grade <=100){
-    console.log('A')
+    console.log('A');
 }
 else if (grade >= 70 && grade <= 79){
     console.log('B');
