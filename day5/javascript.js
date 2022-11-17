@@ -76,3 +76,42 @@ ${itCompanies[6].toUpperCase()}`)
 
 //12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
 console.log(itCompanies.join())
+
+//13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
+const company = itCompanies[4]
+if (company){
+    console.log(itCompanies[4])
+}
+else{
+    console.log('Company not found')
+}
+
+//14.  Filter out companies which have more than one 'o' without the filter method
+let newcompany = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+console.log(newcompany.splice(3,4))
+
+//15. Sort the array using sort() method
+itCompanies.sort();
+console.log(itCompanies)
+
+//16. Reverse the array using reverse() method
+itCompanies.reverse();
+console.log(itCompanies)
+
+//17. Slice out the first 3 companies from the array
+console.log(itCompanies.slice(0, 3))
+
+//18. Slice out the last 3 companies from the array
+console.log(itCompanies.slice(4, itCompanies.length))
+
+//19. Slice out the middle IT company or companies from the array
+console.log(itCompanies.slice(3,4))
+
+//20. Remove the first IT company from the array
+// console.log(itCompanies.splice(1,7))
+
+//21. Remove the middle IT company or companies from the array
+// console.log(itCompanies.splice(0, 24))
+
+// Remove the last IT company from the array
+// Remove all IT companies
