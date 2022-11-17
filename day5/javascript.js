@@ -57,4 +57,22 @@ console.log(itCompanies.length)
 console.log(`${itCompanies[0]}, ${itCompanies[3]}, ${itCompanies[6]}`)
 
 //10. Print out each company
-console.log(`${itCompanies[0]}\n ${itCompanies[1]}\n ${itCompanies[2]}\n ${itCompanies[3]}\n ${itCompanies[4]}\n ${itCompanies[5]}/n ${itCompanies[6]}`)
+console.log(`${itCompanies[0]}
+${itCompanies[1]}
+${itCompanies[2]} 
+${itCompanies[3]}
+${itCompanies[4]}
+${itCompanies[5]}
+${itCompanies[6]}`)
+
+//11. Change each company name to uppercase one by one and print them out
+console.log(`${itCompanies[0].toUpperCase()}
+${itCompanies[1].toUpperCase()}
+${itCompanies[2].toUpperCase()} 
+${itCompanies[3].toUpperCase()}
+${itCompanies[4].toUpperCase()}
+${itCompanies[5].toUpperCase()}
+${itCompanies[6].toUpperCase()}`)
+
+//12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+console.log(itCompanies.join())
