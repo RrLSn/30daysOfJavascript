@@ -8,3 +8,13 @@ const webTechs = [
     'Node',
     'MongoDB'
   ]
+
+  // 5. In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
+  const webTechsCheck = 'Sass'
+  if (webTechs.indexOf(webTechsCheck) == -1){
+    webTechs.unshift('Sass')
+    console.log(webTechs)
+  }
+  else{
+    console.log(`${webTechsCheck} is a CSS preprocess`)
+  }
