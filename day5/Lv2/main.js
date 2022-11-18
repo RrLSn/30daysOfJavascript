@@ -18,8 +18,8 @@ shoppingCart.push('Sugar')
 console.log(shoppingCart)
 
 // remove 'Honey' if you are allergic to honey
-// shoppingCart.pop(3)
-// console.log(shoppingCart)
+shoppingCart.splice(4,1)
+console.log(shoppingCart)
 
 // modify Tea to 'Green Tea'
 shoppingCart[3] = 'Green Tea'
@@ -37,9 +37,7 @@ console.log(fullStack)
 //1. The following is an array of 10 students ages:
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 // Sort the array and find the min and max age
-console.log(ages.sort())
-const age = ages.mingit
-console.log(age)
+
 // Find the median age(one middle item or two middle items divided by two)
 // Find the average age(all items divided by number of items)
 // Find the range of the ages(max minus min)

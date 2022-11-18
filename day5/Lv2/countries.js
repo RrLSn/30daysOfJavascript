@@ -14,10 +14,12 @@ const countries = [
   ]
 
   // 4. In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
-// const country = countries.includes('Ethopia')
-// if (country){
-//   console.log(${countries}.toUpperCase())
+const countryToCheck = 'Ethopia';
+// if (countries.indexOf(countryToCheck) == -1) {
+//   console.log(countries.push(countryToCheck))
 // }
 // else{
-//   console.log(countries.push('Ethopia'))
+//   console.log(countryToCheck.toUpperCase())
 // }
+console.log(countries.push('Ethopia'))
+
