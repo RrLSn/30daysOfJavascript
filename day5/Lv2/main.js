@@ -258,7 +258,7 @@ const newCountries = [
   'Vietnam',
   'Yemen',
   'Zambia',
-  // 'Zimbabwe'
+  'Zimbabwe'
 ]
 console.log(newCountries.slice(0,10))
 
