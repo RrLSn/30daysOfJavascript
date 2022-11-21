@@ -3,8 +3,12 @@
   let text =
   'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
 const words = text.split(',');
-console.log(words);
-console.log(words.length);
+let newword = words.join('')
+let newWords = newword.split('.')
+let cWord = newWords.join('')
+let currentWord = cWord.split(' ')
+console.log(currentWord.length)
+
 
 //3.  In the following shopping cart add, remove, edit items
    const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
@@ -36,6 +40,12 @@ console.log(fullStack);
 
 //1. The following is an array of 10 students ages:
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+let sum = 0
+for (let i = 0; i < ages.length; i++){
+  sum +=ages[i]
+}
+console.log(`${sum / ages.length}`) 
+
 // Sort the array and find the min and max age
 ages.sort()
 console.log(ages)
@@ -59,6 +69,10 @@ const midB = ages[5]
 const median = (midA + midB)/2
 console.log(median)
 // Find the average age(all items divided by number of items)
+for (let i = 0; i > ages.length; i++){
+  sum = 0
+  console.log(sum += i)
+}
 
 // Find the range of the ages(max minus min)
 console.log(max - min)
