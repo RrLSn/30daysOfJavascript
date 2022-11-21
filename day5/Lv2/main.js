@@ -40,11 +40,6 @@ console.log(fullStack);
 
 //1. The following is an array of 10 students ages:
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
-let sum = 0
-for (let i = 0; i < ages.length; i++){
-  sum +=ages[i]
-}
-console.log(`${sum / ages.length}`) 
 
 // Sort the array and find the min and max age
 ages.sort()
@@ -69,15 +64,21 @@ const midB = ages[5]
 const median = (midA + midB)/2
 console.log(median)
 // Find the average age(all items divided by number of items)
-for (let i = 0; i > ages.length; i++){
-  sum = 0
-  console.log(sum += i)
+let sum = 0
+for (let i = 0; i < ages.length; i++){
+  sum +=ages[i]
 }
+let average = (`${sum / ages.length}`) 
+console.log(average)
 
 // Find the range of the ages(max minus min)
 console.log(max - min)
 
 // Compare the value of (min - average) and (max - average), use abs() method 
+console.log(Math.abs(min - average))
+console.log(Math.abs(max - average))
+console.log(Math.abs(min - average) == Math.abs(max - average))
+
 // 1.Slice the first ten countries from the countries array
 const newCountries = [
   'Afghanistan',
