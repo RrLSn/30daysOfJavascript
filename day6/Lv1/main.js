@@ -116,4 +116,5 @@ console.log(randomArr)
 Array.from({length:5}, () => Math.floor(Math.random()*100))
 
 // 15. Develop a small script which generate a six characters random id:
-Math.random().toString(36).substr(2,6)
+const randnum = Math.random().toString(36).substr(2,6)
+console.log(randnum)
