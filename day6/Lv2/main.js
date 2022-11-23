@@ -117,3 +117,8 @@ let newArray=[]
 
       // 16. Print all the elements of array as shown below.
       const fullStack = [['HTML', 'CSS', 'JS', 'React'],['Node', 'Express', 'MongoDB']]
+
+      let zee = fullStack[0].concat(fullStack[1])
+      for(const stack of zee){
+        console.log(stack)
+      }
