@@ -28,6 +28,9 @@ for (let i = 0; i <= n; i++){
 }
 
 // 4. Write a loop that makes the following pattern using console.log():
+for(let i=0; i<=7; i++){
+    console.log('#'.repeat(i))
+}
 
 // 5. Use loop to print the following pattern:
 for (let f = 0; f <= 10; f++){
@@ -99,3 +102,18 @@ const emptyArr = []
 emptyArr.push(sumOdd)
 emptyArr.unshift(sumEven)
 console.log(emptyArr)
+
+// 13. Develop a small script which generate array of 5 random numbers
+Array.from({length: 5}, () => Math.floor(Math.random()*50))
+
+randomArr = []
+for(let i=0; i<=5; i++){
+    randomArr.push(Math.floor(Math.random()*10)) *1
+}
+console.log(randomArr)
+
+// 14. Develop a small script which generate array of 5 random numbers and the numbers must be unique
+Array.from({length:5}, () => Math.floor(Math.random()*100))
+
+// 15. Develop a small script which generate a six characters random id:
+Math.random().toString(36).substr(2,6)

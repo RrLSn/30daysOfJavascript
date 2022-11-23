@@ -1,3 +1,5 @@
+// 1. Develop a small script which generate any number of characters random id:
+Math.random().toString(36).substr(2,12)
 // 4. Using the above countries array, create the following new array.
 const countries = [
     'Albania',
@@ -50,3 +52,23 @@ const countries = [
           console.log(g+' '+'These countries does not contain ia')
         }
       }
+
+      // 9. Using the above countries array, find the country containing the biggest number of characters.
+
+      // 12. Use the webTechs array to create the following array of arrays:
+      const webTechs = [
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'React',
+        'Redux',
+        'Node',
+        'MongoDB'
+      ]
+
+      for(i=0; i<webTechs.length; i++){
+        web = [webTechs[i], webTechs[i].length]
+        console.log(web)
+      }
+
+      
