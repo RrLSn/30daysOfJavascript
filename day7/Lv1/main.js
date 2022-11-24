@@ -95,3 +95,12 @@ convertCelsiusToFahrenheit(10)
 // Normal weight: BMI is 18.5 to 24.9
 // Overweight: BMI is 25 to 29.9
 // Obese: BMI is 30 or more
+
+// 14. Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
+const checkSeason = (Month) => {
+    return `Winter`
+}
+
+console.log(checkSeason('May'))
+
+// 15. Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
