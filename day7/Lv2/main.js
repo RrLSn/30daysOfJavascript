@@ -51,6 +51,16 @@ function sumOfNumbers(a,b,c,d){
 }
 sumOfNumbers(6,10,78,10)
 
+//11. Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
+
+// 12. Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
+
+// 13. Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+
+// evensAndOdds(100);
+// The number of odds are 50.
+// The number of evens are 51.
+
 // 14. Write a function which takes any number of arguments and return the sum of the arguments
 const addItems = (...args) => {
     let sum = 0
@@ -62,6 +72,8 @@ const addItems = (...args) => {
 addItems(15,30,5,40,10)
 
 // 15. Writ a function which generates a randomUserIp
+
+// 16. Write a function which generates a randomMacAddress
 
 // 17. Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
 function randomHexaNumberGenerator(arr){

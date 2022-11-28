@@ -95,12 +95,66 @@ convertCelsiusToFahrenheit(10)
 // Normal weight: BMI is 18.5 to 24.9
 // Overweight: BMI is 25 to 29.9
 // Obese: BMI is 30 or more
+function bmiCal(weight,height){
+    let BMI = weight / (height * height);
+    console.log(BMI)
+    switch(true){
+        case BMI < 18.5:
+            console.log('Underweight');
+            break;
+        case BMI = 18.6 < 25:
+            console.log('Normal weight')
+            break;
+        case BMI = 25 < 30:
+            console.log('Overweight')
+            break;
+        case BMI <= 30:
+            console.log('Obsese')
+            break;
+        default:
+            console.log('Invalid size')
+    }
 
-// 14. Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
-const checkSeason = (Month) => {
-    return `Winter`
 }
 
-console.log(checkSeason('May'))
+// 14. Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
+function checkSeason(){
+    let Season = prompt('Enter Month')
+    console.log(Season);
+switch(Season){
+    case 'March':
+    case 'April':
+    case 'May':
+        console.log('Spring');
+        break;
+    case 'June':
+    case 'July':
+    case 'August':
+        console.log('Summer');
+        break;
+    case 'September':
+    case 'October':
+    case 'November':
+        console.log('Autumn');
+        break;
+    case 'Dcember':
+    case 'January':
+    case 'February':
+        console.log('Winter')
+    default:
+        console.log('Invalid Season')
+ }
+}
+
 
 // 15. Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
+function findMax(a,b,c){
+    if(a>b && a>c){
+        console.log(a)
+    } else if(b>a && b>c){
+        console.log(b)
+    } else{
+        console.log(c)
+    }
+}
+findMax(5,5,1)
