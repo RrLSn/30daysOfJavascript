@@ -13,6 +13,12 @@ function solveQuadEquation(a,b,c,x){
 solveQuadEquation(7,8,9,4)
 
 // 3. Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
+function printArray(arr){
+    for(let i=0; i < arr.length; i++){
+        array = arr[i]
+        console.log(array)}
+    }
+    printArray([5,7,8,95,0])
 
 // 4. Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
 function showDateTime(){
@@ -21,8 +27,20 @@ function showDateTime(){
 }
 
 // 5. Declare a function name swapValues. This function swaps value of x to y.
+function swapValues(x,y){
+    console.log(`${y},${y}`)
+}
+swapValues(5,7)
 
 // 6. Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
+reverse = []
+function reverseArray(arr){
+    for(i=arr.length-1; i>=0; i--){
+        reverse.push(arr[i])
+        }
+        return reverse
+    }
+    reverseArray([6,7,8,9,2,0])
 
 // 7. Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
 
@@ -43,17 +61,40 @@ function addItem(){
 addItem(5,6,7,8,9)
 
 // 9. Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
+function removeItem(arr){
+    let a=arr.slice(2,5) 
+ return a}
 
+removeItem([1,2,3,4,5,6])
 // 10. Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
-function sumOfNumbers(a,b,c,d){
-    let sum = a + b + c + d
+function sumOfNumbers(param){
+    sum = 0
+    for(i=0; i<=param; i++){
+        sum += i
+    }
     return sum 
 }
-sumOfNumbers(6,10,78,10)
+sumOfNumbers(3)
 
 //11. Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
+function sumOfOdds(n){
+    sum = 0
+    for(i=1; i<=n; i+=2){
+        sum += i
+    }
+    return sum
+}
+sumOfOdds(10)
 
 // 12. Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
+function sumOfEven(n){
+    sum = 0
+    for(i=0; i<=n; i+=2){
+        sum += i
+    }
+    return sum
+}
+sumOfEven(10)
 
 // 13. Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
 
