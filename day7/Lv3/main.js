@@ -143,8 +143,26 @@ isPrime(19)
 
 
 //16. Write a functions which checks if all items are unique in the array.
+
 // 17. Write a function which checks if all the items of the array are the same data type.
+
 // 18. JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
+function isValidVariable(variable){
+    symbol = '~`!@#%^&*(){}[]-=+\|/?".,><'
+    number = '1234567890'
+    
+        if(variable.includes(symbol) == true){
+            return 'Invalid Variable'
+        } 
+        if(variable.startsWith(number) == true){
+            return 'Invalid Variable'
+        } 
+        // for(i=0; i<=variable.length; i++){
+        //     return 'Valid'
+        // }
+    
+}
+
 // 19. Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
 // 20. Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
 function reverseCountries(arr){
