@@ -78,3 +78,34 @@ const numSum = numbers.reduce((a,b) => a+b, 1)
 console.log(numSum)
 
 // 18. Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
+let countriesTwo = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway']
+ 
+
+// 19. Explain the difference between some and every
+
+// 20. Use some to check if some names' length greater than seven in names array
+const nameGreater7 = names.some((name)=> name.length>7)
+console.log(nameGreater7)
+
+// 21. Use every to check if all the countries contain the word land
+
+const countriesContainLand = countries.every((country)=>country.includes('land'))
+console.log(countriesContainLand)
+
+// 22. Explain the difference between find and findIndex.
+
+// 23. Use find to find the first country containing only six letters in the countries array
+const result = countries.find((country)=> country.length==6)
+console.log(result)
+
+// 24. Use findIndex to find the position of the first country containing only six letters in the countries array
+const resultIndex = countries.findIndex((country)=>country.length==6)
+console.log(resultIndex)
+
+// 25. Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
+const countryIndex = countries.findIndex((country)=> country.includes('Norway'))
+console.log(countryIndex)
+
+// 26. Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
+const russiaIndex = countries.findIndex((country)=> country.includes('Russia'))
+console.log(russiaIndex)
