@@ -71,7 +71,9 @@ const priceValue = products.filter((produce)=> produce.price)
 console.log(priceValue)
 
 // 16. Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
-// countries.forEach((arr)=> if(arr==String){console.log(arr)})
+const getStringLists = (arr)=>{
+
+}
 
 // 17. Use reduce to sum all the numbers in the numbers array.
 const numSum = numbers.reduce((a,b) => a+b, 1)
@@ -79,6 +81,8 @@ console.log(numSum)
 
 // 18. Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
 let countriesTwo = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway']
+const reduceCount = countriesTwo.reduce((acc)=>`${countriesTwo} and IceLand are north European countries`)
+console.log(reduceCount)
  
 
 // 19. Explain the difference between some and every

@@ -235,6 +235,7 @@ console.log(returnObject.length)
 
 // 5. Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
 
+
 // 6. Declare a getLastTenCountries function which which returns the last ten countries in the countries array.
 const lastTen = countries.length
 const getLastTenCountries = countries.slice(lastTen-10, lastTen).map((result)=>result)
