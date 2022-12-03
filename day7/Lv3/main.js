@@ -8,6 +8,23 @@ ZXOYh
 2Rgxf
 '
 */
+const CharactNum = parseInt(prompt('Enter Number of Character'))
+const inputNum = parseInt(prompt('Enter Number of Input'))
+ 
+ const userIdGeneratedByUser = ()=>{
+    charactId = ''
+    for(i=0;i<CharactNum;i++){
+        inputId = ''
+       for(i=0;i<inputNum;i++){
+            let charact = '1234567890ABCDEFGHIJKLMOPQRSTUVWXYZ'
+            let generatorUser = Math.floor(Math.random()*charact)
+            inputId.charAt(charact)
+        }
+        charactId+=inputId
+    }
+    return charactId
+ }
+
 
 
 // 2. Write a function name rgbColorGenerator and it generates rgb colors.
@@ -45,6 +62,15 @@ arrayOfRgbColors()
 // 5. Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
 
 // 6. Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color.
+function getHex(x){
+    let hex = x.toString(16)
+    hex = hex.length == 1? '0'+hex: hex
+    return hex
+}
+function convertRgbToHexa(r,g,b){
+  return `#`+getHex(r)+getHex(g)+getHex(b)
+}
+console.log(convertRgbToHexa(245,255,200))
 
 // 7. Write a function generateColors which can generate any number of hexa or rgb colors.
 

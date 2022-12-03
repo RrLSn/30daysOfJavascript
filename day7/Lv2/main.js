@@ -113,8 +113,27 @@ const addItems = (...args) => {
 addItems(15,30,5,40,10)
 
 // 15. Writ a function which generates a randomUserIp
+function randomUserIp() {
+    l = Math.floor(Math.random() * 6) + 172;
+    m = Math.floor(Math.random() * 200) + 10;
+    n = Math.floor(Math.random() * 200) + 10;
+    o = Math.floor(Math.random() * 200) + 10;
+    randomUser = `${l}.${m}.${n}.${o}`;
+    console.log(ip);
+  }
+  randomUserIp();
 
 // 16. Write a function which generates a randomMacAddress
+function randomMacAddress(){
+for(i=0;i<5;i++){
+    let randomMac = '1234567890ABCDEFGHIJKLMOPQRSTUVWXYZ'
+    address1 = Math.floor(Math.random()*randomMac.length)
+    address2 = Math.floor(Math.random()*randomMac.length)
+    address3 = Math.floor(Math.random()*randomMac.length)
+    randomAdress = randomMac.charAt(address1)+randomMac.charAt(address2)+randomMac.charAt(address3)
+}
+return randomAdress
+}
 
 // 17. Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
 function randomHexaNumberGenerator(arr){
