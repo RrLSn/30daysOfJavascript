@@ -73,14 +73,40 @@ function convertRgbToHexa(r,g,b){
 console.log(convertRgbToHexa(245,255,200))
 
 // 7. Write a function generateColors which can generate any number of hexa or rgb colors.
+// .startsWith('#')
+function generateColors(a,b){
+    generateArray = []
+    if(a.includes('#')){
+        for(i=0;i<b;i++){
+            let hex = '#'
+            for(i=0;i<6;i++){
+                const charact = '0123456789abcdef'
+                const randomHex = Math.floor(Math.random()*charact.length)
+                hex+=charact.charAt(randomHex)
+            }
+            generateArray.push(hex)
+        }
+       return generateArray
+    } else {
+        for(i=0;i<b;i++){
+            const rgba = Math.floor(Math.random()*256)
+            const rgbb = Math.floor(Math.random()*256)
+            const rgbc = Math.floor(Math.random()*256)
+            randomRGB = `rgb(${rgba},${rgbb},${rgbc})`
+        }
+        generateArray.push(randomRGB)
+    }
+    return generateArray
+}
 
 // 8. Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
-const shuffleArray = (arr) =>{
-for(i=0;i<=arr.length;i++){
-
+// const newItems = []
+function shuffleArray(arr){
+arr.sort()
+const newItems = [...arr]
+return newItems
 }
-
-}
+shuffleArray([2, 1, 4, 3, 5])
 
 // 9. Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
 function factorial(num){
@@ -144,6 +170,11 @@ sum(5,8,9,0,4,4)
 //     }
 //     return sum
 // }
+function sumOfArrayItems(arr){
+    if(arr.every()!==arr.includes(String)){
+        return 'This is a mixture of numbers and alphabets'
+    }
+}
 
 // 13. Write a function called average, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
 
@@ -171,23 +202,28 @@ isPrime(19)
 //16. Write a functions which checks if all items are unique in the array.
 
 // 17. Write a function which checks if all the items of the array are the same data type.
+function itemsCheck(arr)
 
 // 18. JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
+
 function isValidVariable(variable){
-    symbol = '~`!@#%^&*(){}[]-=+\|/?".,><'
-    number = '1234567890'
-    
-        if(variable.includes(symbol) == true){
-            return 'Invalid Variable'
-        } 
-        if(variable.startsWith(number) == true){
-            return 'Invalid Variable'
-        } 
-        // for(i=0; i<=variable.length; i++){
-        //     return 'Valid'
-        // }
-    
+   let symbol = '~`!@#%^&*(){}[]-=+\|/?".,><'
+   let  number = '1234567890'
+    for(i=0;i<variable.length;i++){
+        if(variable.includes(symbol)||variable.startWith(number))return 'Invalid'
+    }
 }
+
+        
+        
+        
+//         {
+//             return 'Invalid Variable'
+//         }else{
+//             return 'Valid Variable'
+//         } 
+        
+// }
 
 // 19. Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
 // 20. Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
