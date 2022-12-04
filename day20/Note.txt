@@ -1,0 +1,53 @@
+A JavaScript style guide is a set of standards that tells how JavaScript code should be written and organized.These are guidelines to follow to write a clean code. majorly used in a team word for readable and easily manageable code. 
+Most common JavaScript style guide: Airbnb JavaScript Style Guide
+                                    JavaScript Standard Style Guide
+				    Google JavaScript Style Guide
+
+Airbnb style is simple and easy to use and it also covers every aspect of JavaScript which are PEIMITIVE AND NON-PRIMITIVE DATAtype. primitive work directely on values while non-primitive make reference on Values.
+both LET and CONST are both block-scope while VAR is a function scope
+block-acope only exist in the block they are define in whereas function scope exist is contain in the function.
+
+JavaScript codding coventions also used the general javaScript coding writing guides which helps to 1. write clean code
+			      2. makes code simple and easily readable
+			      3. improve code re-usability and easily to maintain or manage.
+coding convention includes : 1. Naming and declaration rules for variables
+			     2. Naming and declaration rules for functions
+			     3. Rules for the use of white space, indentation, and comments
+			     4. Programming practices and principles
+
+Variable
+Array of : names
+	   numbers
+	   countries
+	   languages
+	   skills
+	   fruits
+	   vegetables
+
+functions: function declaration
+	   function expression
+	   Arrow function
+
+Loops: For loop
+	while loop
+	do while loop 
+	for of loop
+	forEach loop and 
+	for in loop
+
+Condition in Js is being declare by 'if', 'if else', 'if else if else', 'switch' and terniary operation(use of '?' and ':')
+
+// syntax
+if (condition) {
+ // this part of code run for truthy condition
+} else {
+ // this part of code run for false condition
+}
+
+
+Class is being declare with 'CamelCase' 
+// syntax
+class ClassName {
+    // code goes here
+}
+

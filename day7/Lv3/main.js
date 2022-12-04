@@ -76,24 +76,24 @@ console.log(convertRgbToHexa(245,255,200))
 // .startsWith('#')
 function generateColors(a,b){
     generateArray = []
-    if(a.includes('#')){
+    hexa = '#'
+    if(a.includes(hexa)){
         for(i=0;i<b;i++){
-            let hex = '#'
             for(i=0;i<6;i++){
                 const charact = '0123456789abcdef'
                 const randomHex = Math.floor(Math.random()*charact.length)
-                hex+=charact.charAt(randomHex)
+                hexa+=charact[randomHex]
             }
-            generateArray.push(hex)
+            generateArray.push(hexa)
         }
        return generateArray
     } else {
-        for(i=0;i<b;i++){
+        // for(i=0;i<b;i++){
             const rgba = Math.floor(Math.random()*256)
             const rgbb = Math.floor(Math.random()*256)
             const rgbc = Math.floor(Math.random()*256)
             randomRGB = `rgb(${rgba},${rgbb},${rgbc})`
-        }
+        // }
         generateArray.push(randomRGB)
     }
     return generateArray
