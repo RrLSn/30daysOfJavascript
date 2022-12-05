@@ -2017,6 +2017,7 @@ for(const {name, capital, languages, population} of countriesAllAndData)
 console.log(name, capital, languages, population)
 
 
-2. A junior developer structure student name, skills and score in array of arrays which may not easy to read. Destructure the following array name to name, skills array to skills, scores array to scores, JavaScript score to jsScore and React score to reactScore variable in one line.
-const student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
-console.log(name, skills, jsScore, reactScore)
+// 2. A junior developer structure student name, skills and score in array of arrays which may not easy to read. Destructure the following array name to name, skills array to skills, scores array to scores, JavaScript score to jsScore and React score to reactScore variable in one line.
+// const student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
+// const studentStructure = ['name',[, , JsScore,reactScore],[scores]] = student
+// console.log(name, JsScore, reactScore, scores)

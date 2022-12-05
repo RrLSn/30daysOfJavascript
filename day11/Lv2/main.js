@@ -48,12 +48,5 @@ const users = [
         console.log(name,scores,skills,age)
     }
 
-    // 2. Find the persons who have less than two skills
-  
-    
-        // for(i=0;i<users[skills].length;i++){
-        //     if(users[skills].length<2){
-        //         console.log(users[skills])
-        //     }
-        // }
-    
+// 2. Find the persons who have less than two skills
+
