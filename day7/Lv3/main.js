@@ -162,14 +162,6 @@ function sum(...args){
 sum(5,8,9,0,4,4)
 
 // 12. Write a function called sumOfArrayItems, it takes an array parameter and return the sum of all the items. Check if all the array items are number types. If not give return reasonable feedback.
-// function sumOfArrayItems(arr){
-//     sum = 0
-//     for(i=0;i<arr.length; i++){
-//      sum +=arr[i]
-//      if(arr.every())
-//     }
-//     return sum
-// }
 let sum = 0
 function sumOfArrayItems(arr){
     for(i=0;i<arr.length;i++){
@@ -181,12 +173,40 @@ function sumOfArrayItems(arr){
     return sum
 }
 
-sumOfArrayItems([1,3,5,6,7,9,u])
+sumOfArrayItems([1,3,5,6,7,9,'u'])
 sumOfArrayItems([1,4,7,9,0,100])
 
 // 13. Write a function called average, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
+let sum =0
+function averageArray(arr){
+    for(i=0;i<arr.length;i++){
+        if(typeof arr[i] !='number'){
+            return 'These array items are not number types'
+        }
+        sum += arr[i]
+        average = Math.round(sum/arr.length)
+    }
+    return average
+} 
+averageArray([1,3,5,6,7,9,'u'])
+averageArray([1,4,7,9,0,100])
 
 // 14. Write a function called modifyArray takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.
+function modifyArray(arr){
+    for(i=0;i<arr.length;i++){
+        if(arr.length<5){
+            return 'Items not found'
+        }
+        else{
+            arr[4] = arr[4].toUpperCase()
+            return arr
+        }
+    }
+}
+
+modifyArray(['Mango','Orange','Tomatoes'])
+modifyArray(['Mango','Orange','Tomatoes','Grape','Banana','Strawberries'])
+
 
 // 15. Write a function called isPrime, which checks if a number is prime number.
 
@@ -208,32 +228,51 @@ isPrime(19)
 
 
 //16. Write a functions which checks if all items are unique in the array.
+let unique = []
+function checkUnique(arr){
+    for(i=0;i<arr.length;i++){
+        if(unique.includes(arr[i])){
+            return'Not a unique Number'
+        }
+        unique.push(arr[i])
+    }
+    return 'Is a unique number'
+}
 
 // 17. Write a function which checks if all the items of the array are the same data type.
-function itemsCheck(arr)
+function itemsCheck(arr){
+    for(i=1;i<arr.length;i++){
+        if(typeof arr[0]===typeof arr[i]){
+            return true
+        }
+    }
+    return false
+}
 
 // 18. JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
 
 function isValidVariable(variable){
-   let symbol = '~`!@#%^&*(){}[]-=+\|/?".,><'
-   let  number = '1234567890'
-    for(i=0;i<variable.length;i++){
-        if(variable.includes(symbol)||variable.startWith(number))return 'Invalid'
-    }
+    if(variable==='$'||variable==='_'){
+        console.log('valid')
+    } 
+    else
+        console.log('Invalid')
 }
 
-        
-        
-        
-//         {
-//             return 'Invalid Variable'
-//         }else{
-//             return 'Valid Variable'
-//         } 
-        
-// }
-
 // 19. Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
+const uniqueNum =[]
+function SevenRanNum(){
+    for(i=0;i<7;i++){
+        let random = Math.floor(Math.random()*10)
+        if(uniqueNum.charAt(random)){
+            return
+        }
+        else{return uniqueNum.push(random)}
+    }
+    return uniqueNum
+}
+SevenRanNum()
+
 // 20. Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
 function reverseCountries(arr){
     let country = []
