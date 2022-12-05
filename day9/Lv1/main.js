@@ -72,8 +72,12 @@ console.log(priceValue)
 
 // 16. Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
 const getStringLists = (arr)=>{
-
+    const arrayStrings = arr.filter((string)=> typeof string === 'string')
+    return arrayStrings
 }
+console.log(getStringLists([1,3,6,8,9,2]))
+console.log(getStringLists(['1','3',6,'8',9,'2']))
+console.log(getStringLists(['1','3','6','8','9','2']))
 
 // 17. Use reduce to sum all the numbers in the numbers array.
 const numSum = numbers.reduce((a,b) => a+b, 1)

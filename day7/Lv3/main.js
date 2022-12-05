@@ -241,12 +241,13 @@ function checkUnique(arr){
 
 // 17. Write a function which checks if all the items of the array are the same data type.
 function itemsCheck(arr){
-    for(i=1;i<arr.length;i++){
-        if(typeof arr[0]===typeof arr[i]){
+    for(i=0;i<arr.length;i++){
+        if(typeof arr[i]===typeof arr[i]){
             return true
         }
+            return false
+        
     }
-    return false
 }
 
 // 18. JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
