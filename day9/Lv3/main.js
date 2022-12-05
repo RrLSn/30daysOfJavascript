@@ -2011,3 +2011,30 @@ const countriesAllAndData = [
         currency: 'Botswana pula'
     }
 ]
+// 1. Use the countries information, in the data folder. Sort countries by name, by capital, by population
+countriesAllAndData.sort((a, b)=>{
+    if(a.name<b.name)
+        return false
+     if(a.name>b.name) return true
+})
+
+countriesAllAndData.sort((a, b)=>{
+    if(a.capital<b.capital)
+        return false
+     if(a.capital>b.capital) return true
+})
+
+countriesAllAndData.sort((a, b)=>{
+    if(a.population<b.population)
+        return false
+     if(a.population>b.population) return true
+})
+
+// 2. Find the 10 most spoken languages:
+const mostSpokenLanguages = countriesAllAndData.sort((a, b)=>{
+    if(a.languages<b.languages)
+        return false
+     if(a.languages>b.languages) return true
+})
+
+// const mostSpoken 
