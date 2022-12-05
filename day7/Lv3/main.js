@@ -12,17 +12,17 @@ const CharactNum = parseInt(prompt('Enter Number of Character'))
 const inputNum = parseInt(prompt('Enter Number of Input'))
  
  const userIdGeneratedByUser = ()=>{
-    charactId = ''
-    for(i=0;i<CharactNum;i++){
-        inputId = ''
-       for(i=0;i<inputNum;i++){
-            let charact = '1234567890ABCDEFGHIJKLMOPQRSTUVWXYZ'
-            let generatorUser = Math.floor(Math.random()*charact)
-            inputId.charAt(charact)
+    inputId = ''
+    for(k=0;k<inputNum;k++){
+        charactId = ''
+       for(i=0;i<CharactNum;i++){
+            let charact = '1234567890ABCDEFGHIJKLMOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+            let generatorUser = Math.floor(Math.random()*charact.length)
+            charactId+=charact.charAt(generatorUser)
         }
-        charactId+=inputId
+        inputId+=` ${charactId}`
     }
-    return charactId
+    return inputId
  }
 
 
@@ -170,11 +170,19 @@ sum(5,8,9,0,4,4)
 //     }
 //     return sum
 // }
+let sum = 0
 function sumOfArrayItems(arr){
-    if(arr.every()!==arr.includes(String)){
-        return 'This is a mixture of numbers and alphabets'
+    for(i=0;i<arr.length;i++){
+        if(typeof arr[i] != 'number'){
+            return 'These are mixture of numbers and alphabet'
+        }
+        sum +=arr[i]
     }
+    return sum
 }
+
+sumOfArrayItems([1,3,5,6,7,9,u])
+sumOfArrayItems([1,4,7,9,0,100])
 
 // 13. Write a function called average, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
 
