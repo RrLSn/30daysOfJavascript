@@ -129,3 +129,35 @@ console.log(txtB.match(pattern5)) // ['e-mail', 'email', 'Email', 'E-mail']
 
 // Quantifier in RegExp
 // We can specify the length of the substring we look for in a text, using a curly bracket. Let us see, how ot use RegExp quantifiers. Imagine, we are interested in substring that their length are 4 characters
+const txt5 = 'This regular expression example was made in December 6,  2019.'
+const pattern6 = /\b\w{4}\b/g //exactly four character words
+console.log(txt5.match(pattern6))  //['This', 'made', '2019']
+             //OR
+
+txtB = 'I am not sure if there is a convention how to write the word e-mail.\
+Some people write it email others may write it as Email or E-mail.'
+const pattern6A = /\b[A-Za-z]{4}\b/g
+console.log(txtB.match(pattern6A))  //['sure', 'word', 'mail', 'Some', 'mail']
+             //OR
+
+const txt5A = 'This regular expression example was made in December 6,  2019. 40040044'
+const pattern6B =/\d{4}/g
+console.log(txt5A.match(pattern6B)) //['2019', '4004', '0044']
+             //OR
+const pattern6C = /\d{1,4}/g
+console.log(txt5A.match(pattern6C))  //['6', '2019', '4004', '0044']
+
+// Cart ^
+// Starts with
+const pattern7 = /^This/g
+console.log(txt5A.match(pattern7)) //['This']
+
+// cart ^ can also be use for Negation 
+
+
+
+// Exact match
+// It should have ^ starting and $ which is an end.
+
+
+
