@@ -1,25 +1,29 @@
 // 1. Create an object literal called personAccount. It has firstName, lastName, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is a set of incomes and its description.
 const personAccount ={
-    firstName: 'Abraham',
-    lastName: 'Joe',
-    incomes: [40000,40000,30000,50000],
-    expenses: [1000,20000,5000],
-    totalIncome: function(){
-        sum = 0
-        for(i=0;i<this.incomes.length;i++){
-            sum += this.incomes[i]
-        }
-        return sum
+firstName: 'Abraham',
+lastName: 'Joe',
+incomes: [40000,40000,30000,50000],
+expenses: [1000,20000,5000],
+totalIncome: function(){
+    sum = 0
+    for(i=0;i<this.incomes.length;i++){
+        sum += this.incomes[i]
+    }
+    return sum
     },
-    totalExpenses: function(){
-        sum = 0
-        for(i=0;i<this.expenses.length;i++){
-            sum += this.incomes[i]
-        }
-        return sum
+totalExpenses: function(){
+    sum = 0
+    for(i=0;i<this.expenses.length;i++){
+        sum += this.incomes[i]
+    }
+    return sum
     },
-    accountInfo: `${firstName}-${lastName} accoutn with these income:${incomes}, expenses:${expenses} but a Total income of ${totalIncome} and Total expenses of ${totalExpenses}`
+// accountInfo: function(){
+//     return `${this.firstName}-${this.lastName} account with these income:${this.incomes}, expenses:${this.expenses} but a Total income of ${this.totalIncome()} and Total expenses of ${this.totalExpenses>>()}`
+// }
 }
+
+
 
 // **** Questions:2, 3 and 4 are based on the following two arrays:users and products ()
     const users = [
