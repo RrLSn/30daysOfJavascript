@@ -17,18 +17,17 @@ console.log(sortedPoints)
 
 
 // 3. Write a pattern which identify if a string is a valid JavaScript variable
-const isValid = (variable) => {
-    const variable = 'Afolabi'
-    if(variable.includes('_')){
-        return true
-    } else if(variable.includes('-')){
-        return false
-    } else if(variable.startsWith('number')){
-        return true
-    }else{
-        return true
-    }
-}
+// const isValid = (variable) => {
+//     const variable = 'Afolabi'
+//     if(variable.includes('_')){
+//         return true
+//     } else if(variable.includes('-')){
+//         return false
+//     } else if(variable.startsWith('number')){
+//         return false
+//     }else{
+//         return true
+//     }
+// }
 
-isValid()
-
+// isValid()
