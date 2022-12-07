@@ -11,3 +11,6 @@ const intersect = a.filter((num) => bSet.has(num))
 console.log(new Set(intersect))
 
 // 3. Find a with b
+const aWithB = new Set(b)
+const APlusb = a.filter((num) => !aWithB.has(num))
+console.log(APlusb)

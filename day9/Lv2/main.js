@@ -9,9 +9,7 @@ const products = [
   ]
 
  sum = 0
- const iterator = products.map((sum1)=>{
-    const iterator1 = products.filter((sum2)=>{
-        const iterator2 = products.reduce((sum3,sum4)=>{
+ const iterator = products.map((sum1)=>{iterator1 = products.filter((sum2)=>{iterator2 = products.reduce((sum3,sum4)=>{
             return `${sum += sum1.price}`
         })
     })
