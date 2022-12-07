@@ -31,7 +31,7 @@ function showDateTime(){
 
 // 5. Declare a function name swapValues. This function swaps value of x to y.
 function swapValues(x,y){
-    console.log(`${y},${y}`)
+    console.log(`${y},${x}`)
 }
 swapValues(5,7)
 

@@ -95,15 +95,26 @@ const personAccount ={
   }
 ]
 // 2. Imagine you are getting the above users collection from a MongoDB database. a. Create a function called signUp which allows user to add to the collection. If user exists, inform the user that he already has an account.
-// function signUp(n){
-//     for(i=0;i<n.length;i++){
-//         if(users.charAT(n[i]!=true)){
-//             return users.add(n[i])
-//         }
-//         else{
-//             return 'user Already got an Account'
-//         }
-//     }
-// }
+function signUp(MongoDBase){
+    for(i=0;i<MongoDBase.length;i++){
+        if(users.charAt(MongoDBase[i]!=true)){
+            return users.add(MongoDBase[i])
+        }
+        else{
+            return 'user Already got an Account'
+        }
+    }
+}
+/*
+function signUp(){
+    for(i=0;i<Object.keys.length;i++){
+        if(users.charAt(Object.keys[i]!=true)){
+            return users.add(Object.keys[i])
+        }
+        else{
+            return 'user Already got an Account'
+        }
+    }
+}*/
 
 // b. Create a function called signIn which allows user to sign in to the application

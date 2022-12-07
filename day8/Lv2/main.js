@@ -51,6 +51,21 @@ const users = {
     }
   }
 
+  let manySkills = [
+    users.Alex.skills,
+    users.Asab.skills,
+    users.Brook.skills,
+    users.Daniel.skills,
+    users.John.skills,
+    users.Thomas.skills,
+    users.Paul.skills]
+
+    for(const skill of manySkills){
+      if(skill.length>=4){
+        console.log(skill)
+      }
+    }
+
 // 2. Count logged in users, count users having greater than equal to 50 points from the following object.
 let loggedinUser = [
     users.Alex.isLoggedIn,
@@ -113,7 +128,14 @@ for(const mernStack of stackDev){
 
 // 4. Set your name in the users object without modifying the original users object
 const copyUsers = Object.assign({}, users)
-users.Afolabi = {email:'afol@sodiq.com'}
+copyUsers.Afolabi = {
+  email:'afol@sodiq.com',
+  skills: ['HTML', 'CSS', 'JavaScript'],
+  age: 50,
+  isLoggedIn: true,
+  points: 100
+}
+console.log(copyUsers)
 
 // 5. Get all keys or properties of users object
 const key = Object.keys(copyUsers)
@@ -132,7 +154,7 @@ const countries = {
 }
 
 countries.fullDetails = function(){
-    let countryInfo = `A country ${this.Country} with ${this.Capital} as her Capital has a total population of ${this.Population} and ${this.Languages}.`
+    let countryInfo = `A country ${this.Country} with ${this.Capital} as her Capital has a total population of ${this.Population} and speaks over ${this.Languages}.`
     return countryInfo
 }
 
