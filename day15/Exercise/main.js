@@ -47,3 +47,11 @@ console.log(secondDog.legs)
 
 
 // 2. Create a Dog and Cat child class from the Animal Class.
+class Dog extends Animal{
+    dogChild(){
+        console.log('Dogs are caring,friendly but culd be agreesive and dangerous')
+    }
+}
+
+const dogsInfo = new Dog('Helsinsky','Black')
+console.log(dogsInfo)
