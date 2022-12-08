@@ -200,7 +200,7 @@ class SetterInfo {
         this.age = age
         this.country = country
         this.city = city
-        this.score = 5
+        this.scores = 5
         this.skills = []
     }
     getSetterInfo(){
@@ -209,7 +209,7 @@ class SetterInfo {
     }
 
     get getScores(){
-        return this.score
+        return this.scores
     }
 
     get getSkills(){
@@ -225,17 +225,30 @@ class SetterInfo {
     }
 }
 
-const personA = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
-const personB = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
+const personA = new SetterInfo('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
+const personB = new SetterInfo('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
 
 personA.setScores = 1
-console.log(personA.setScores)
+console.log(personA.scores)
 
 personB.setScores = 5
-console.log(personB.setScores)
+console.log(personB.scores)
 
-personA.setSkills = 'HTML'
-personA.setSkills = 'CSS'
-personA.setSkills = 'JavaScript'
+personA.setSkill = 'HTML'
+personA.setSkill = 'CSS'
+personA.setSkill = 'JavaScript'
 
-console.log(personA.setSkills)
+console.log(personA.skills)
+personB.setSkill = 'Planning'
+personB.setSkill = 'Managing'
+personB.setSkill = 'Organizing'
+console.log(personB.skills)
+
+
+
+// Inheritance
+// syntax
+// class ChildClassName extends {
+    
+//      code goes here
+//    }
