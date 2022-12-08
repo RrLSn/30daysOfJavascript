@@ -4,24 +4,44 @@ firstName: 'Abraham',
 lastName: 'Joe',
 incomes: [40000,40000,30000,50000],
 expenses: [1000,20000,5000],
-totalIncome: function(){
-    sum = 0
-    for(i=0;i<this.incomes.length;i++){
+totalIncomes: function () {
+    let sum = 0
+    for(let i = 0; i < this.incomes.length; i++){
         sum += this.incomes[i]
     }
     return sum
     },
 totalExpenses: function(){
-    sum = 0
-    for(i=0;i<this.expenses.length;i++){
-        sum += this.incomes[i]
+    let sum = 0
+    for(let i = 0; i < this.expenses.length; i++){
+        sum += this.expenses[i]
     }
     return sum
     },
-// accountInfo: function(){
-//     return `${this.firstName}-${this.lastName} account with these income:${this.incomes}, expenses:${this.expenses} but a Total income of ${this.totalIncome()} and Total expenses of ${this.totalExpenses>>()}`
-// }
+accountInfo: function(){
+    return `${this.firstName}-${this.lastName} account with these income:${this.incomes}, expenses:${this.expenses} but a Total income of ${this.totalIncomes()} and Total expenses of ${this.totalExpenses()}`
+},
+addIncomes: function(addI){
+    this.incomes.push(addI)
+    return this.incomes
+},
+addExpenses: function(addE){
+    this.expenses.push(addE)
+    return this.expenses
+},
+addBalance: function(){
+   let balance = `${this.totalIncomes() - this.totalExpenses()}`
+   return balance
 }
+}
+
+console.log(personAccount.totalExpenses())
+console.log(personAccount.totalIncomes())
+console.log(personAccount.addIncomes(300))
+console.log(personAccount.addExpenses(300))
+console.log(personAccount.addBalance())
+console.log(personAccount.addIncomes(1000000))
+console.log(personAccount.addExpenses(1000))
 
 
 
@@ -44,7 +64,7 @@ totalExpenses: function(){
         isLoggedIn: true
     },
     {
-        _id: 'zwf8md',
+        _id: '`zwf8md`',
         username: 'Brook',
         email: 'brook@brook.com',
         password: '123111',
@@ -99,26 +119,39 @@ totalExpenses: function(){
   }
 ]
 // 2. Imagine you are getting the above users collection from a MongoDB database. a. Create a function called signUp which allows user to add to the collection. If user exists, inform the user that he already has an account.
-function signUp(MongoDBase){
-    for(i=0;i<MongoDBase.length;i++){
-        if(users.charAt(MongoDBase[i]!=true)){
-            return users.add(MongoDBase[i])
-        }
-        else{
-            return 'user Already got an Account'
+function signUp(id,username,email,password,created,login){
+    let MongoDBase = Object.values(users)
+    for(const MongoDB of MongoDBase){
+        if(MongoDB._id.includes(id)){
+            return 'You already have an account'
         }
     }
+    users.push({
+        _id:`${id}`,
+        username: `${username}`,
+        email: `${email}`,
+        password:`${password}`,
+        createdAt: `${created}`,
+        isLoggedIn: `${login}`
+
+    })
+    return users
 }
-/*
-function signUp(){
-    for(i=0;i<Object.keys.length;i++){
-        if(users.charAt(Object.keys[i]!=true)){
-            return users.add(Object.keys[i])
-        }
-        else{
-            return 'user Already got an Account'
-        }
-    }
-}*/
+
+console.log(signUp('fg12cy','Abs','Great', 'using','using','great'))
+console.log(signUp('Abs','Abs','Abs','Abs','Abs','abs'))
+
 
 // b. Create a function called signIn which allows user to sign in to the application
+
+function signIn(username,password){
+    let isLogin = Object.values(users)
+    for(login of isLogin){
+        if(login.username == username && login.password == password){
+            return 'Welcome Back User'
+        }
+    } return 'Incorrect Login Credentials'
+}
+
+console.log(signIn('john','adegoke456'))
+console.log(signIn('Thomas', '123333'))
