@@ -232,7 +232,11 @@ const returnObject = countries.filter((country)=>country.startsWith('A'))
 console.log(returnObject.length)
 
 // 5. Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
+const getFirstTenCountries = countries.slice(0,10).map((country) => country)
+console.log(getFirstTenCountries)
 
+const getFirstTenCountries2 = countries.slice(0.10).filter((country) => country)
+console.log(getFirstTenCountries2)
 
 // 6. Declare a getLastTenCountries function which which returns the last ten countries in the countries array.
 const lastTen = countries.length
