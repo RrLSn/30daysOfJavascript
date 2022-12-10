@@ -244,8 +244,6 @@ personB.setSkill = 'Managing'
 personB.setSkill = 'Organizing'
 console.log(personB.skills)
 
-
-
 // Inheritance
 // syntax
 // class ChildClassName extends {
