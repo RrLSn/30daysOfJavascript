@@ -2023,11 +2023,11 @@ const studentStructure = ['name',[, , JsScore,reactScore],[scores]] = student
 console.log(name, JsScore, reactScore, scores)
 
 // 3. Write a function called convertArrayToObject which can convert the array to a structure object.
-function convertArrayToObject(student){
-    student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
-    let solution = Object.assign({},arr)
-    console.log(solution)
-}
+// function convertArrayToObject(student){
+//     student = ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]]
+//     let solution = Object.assign({},arr)
+//     console.log(solution)
+// }
 /*
 function convertArrayToObject(student){
     students = [

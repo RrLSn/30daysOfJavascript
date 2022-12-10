@@ -2014,9 +2014,17 @@ const countriesAllAndData = [
 
 // 1. How many languages are there in the countries object file.
 
+const numberOflanguages = new Set(countriesAllAndData.languages)
+console.log(numberOflanguages)
+for (const languages of numberOflanguages){
+    console.log(languages)
+}
+
+
+
 //2. *** Use the countries data to find the 10 most spoken languages:
 
-   /*Your output should look like this
+/*  Your output should look like this
    console.log(mostSpokenLanguages(countries, 10))
    [
      { English: 91 },
@@ -2030,7 +2038,9 @@ const countriesAllAndData = [
      { Chinese: 5 },
      { Swahili: 4 },
      { Serbian: 4 }
-   ]
+   ]*/
+
+   
 
   // Your output should look like this
   console.log(mostSpokenLanguages(countries, 3))
@@ -2038,4 +2048,4 @@ const countriesAllAndData = [
   {English:91},
   {French:45},
   {Arabic:25}
-  ]*/
+  ]

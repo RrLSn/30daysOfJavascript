@@ -2031,10 +2031,5 @@ countriesAllAndData.sort((a, b)=>{
 })
 
 // 2. Find the 10 most spoken languages:
-const mostSpokenLanguages = countriesAllAndData.sort((a, b)=>{
-    if(a.languages<b.languages)
-        return false
-     if(a.languages>b.languages) return true
-})
 
-// const mostSpoken 
+
