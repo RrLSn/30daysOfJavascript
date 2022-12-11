@@ -137,3 +137,5 @@ const parseText = JSON.parse(text,undefined,4)
 console.log(parseText)
 
 // 2. Find the user who has many skills from the variable stored in txt
+
+const findUser
