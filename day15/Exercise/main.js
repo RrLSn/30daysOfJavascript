@@ -30,7 +30,7 @@ class Animal {
         return legs
     }
     getFullDogInfo(){
-        const dogInfo = `My Dog ${this.name} is ${this.age} old, ${this.color}, my dog has ${this.legs}`
+        const dogInfo = `My Dog ${this.name} is ${this.age} old, ${this.color}, my dog has ${this.legs} legs`
 
         return dogInfo
     }
@@ -41,17 +41,34 @@ const firstDog = new Animal('pug','3months','white', 4)
 const secondDog = new Animal('Bull','3years','Black',4)
 
 console.log(firstDog.getColor())
+console.log(firstDog.getFullDogInfo())
+
+console.log(secondDog.getColor())
+console.log(secondDog.getFullDogInfo())
+
 
 
 // 2. Create a Dog and Cat child class from the Animal Class.
 class Dog extends Animal{
     dogChild(){
-        console.log('Dogs are caring,friendly but culd be agreesive and dangerous')
+        return 'Dogs are caring,friendly but could be agressive'
     }
 }
 
 const dogsInfo = new Dog('Helsinsky','10months', 'Black', 4)
 console.log(dogsInfo)
+console.log(dogsInfo.dogChild())
+
+
+class Cat extends Animal{
+    catChild(){
+        return 'Cats are caring,friendly'
+    }
+}
+
+const catInfo = new Cat('British Shorthair','10months', 'Gray', 4)
+console.log(catInfo)
+console.log(catInfo.catChild())
 
 
 // Exercise 2
@@ -64,7 +81,7 @@ class Dogs extends Animal{
     }
 
     saySomething(){
-        console.log('My Dog bark when i got back from work')
+        return 'My Dog bark when i got back from work'
     }
 
     getdogInfo(){
@@ -76,6 +93,7 @@ class Dogs extends Animal{
 const MyDogInfo = new Dogs('Jerry', '3month', 'white', 'Female')
 
 console.log(MyDogInfo.getdogInfo())
+console.log(MyDogInfo.saySomething())
 
 
 
