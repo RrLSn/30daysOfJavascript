@@ -91,22 +91,63 @@ class statistic{
        return this.ages.length
     }
    sum(){
-    let sum = this.ages.reduce((acc,cur) => acc + cur,0)
-    return sum 
+    return this.ages.reduce((acc,cur) => acc + cur,0)
    }
    min(){
-    let mean = 
+    return Math.min(...this.ages)
+   }
+   max(){
+    return Math.max(...this.ages)
+   }
+   range(){
+    return Math.max(...this.ages) - Math.min(...this.ages)
+   }
+   mean(){
+    return Math.round(this.sum() / this.count())
+   }
+   median(){
+    const median = this.ages.sort((a,b)=> a-b)
+    console.log(median)
+    for(let i=0;i<median.length;i++) {
+        if(median.length % 2 == 1){
+            return median[Math.floor(median.length / 2)]
+        }
+        let med = median.length / 2
+        return (median[med - 1] + median[med]) / 2
+    }
+   }
+   mode(){}
+   varia(){
+    
+    let sd = []
+    
+    for(let i=0;i<this.ages.length;i++){
+       let xx=  this.ages[i] - this.mean()
+    //   let sq=  sd.push(xx**2)
+    sd.push(xx)
+ 
+    }
+    console.log(sd)
+    let sqrt=sd.map((n)=>n**2)
+    console.log(sqrt)
+    let sum=sqrt.reduce((a,b)=>a+b,0)
+    console.log(sum)
+    return sum / this.ages.length
+   }
+
+   std(){
+    return Math.sqrt(this.varia())
    }
 }
 const statistics = new statistic
-console.log('Count:', statistics.count())
-console.log('Sum: ', statistics.sum())
+console.log('Count:', statistics.count()) // 25
+console.log('Sum: ', statistics.sum()) // 744
 console.log('Min: ', statistics.min()) // 24
 console.log('Max: ', statistics.max()) // 38
 console.log('Range: ', statistics.range()) // 14
 console.log('Mean: ', statistics.mean()) // 30
 console.log('Median: ',statistics.median()) // 29
 console.log('Mode: ', statistics.mode()) // {'mode': 26, 'count': 5}
-console.log('Variance: ',statistics.var()) // 17.5
+console.log('Variance: ',statistics.varia()) // 17.5
 console.log('Standard Deviation: ', statistics.std()) // 4.2
-console.log('Variance: ',statistics.var()) // 17.5
+console.log('Frequency Distribution: ',statistics.freqDist())
