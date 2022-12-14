@@ -150,4 +150,62 @@ console.log('Median: ',statistics.median()) // 29
 console.log('Mode: ', statistics.mode()) // {'mode': 26, 'count': 5}
 console.log('Variance: ',statistics.varia()) // 17.5
 console.log('Standard Deviation: ', statistics.std()) // 4.2
-console.log('Frequency Distribution: ',statistics.freqDist())
+// console.log('Frequency Distribution: ',statistics.freqDist())
+
+
+// Exercise 4
+// 1. Create a class called PersonAccount. It has firstname, lastname, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
+
+class PersonAccount{
+    constructor(firstName, LastName, Incomes, Expenses){
+        this.firstName = firstName
+        this.LastName = LastName
+        this.Incomes = Incomes
+        this.Expenses = Expenses
+    }
+
+    totalIncomes(){
+    let sum = 0
+    for(let i = 0; i < this.Incomes.length; i++){
+        sum += this.Incomes[i]
+    }
+    return sum
+    }
+    totalExpenses(){
+    let sum = 0
+    for(let i = 0; i < this.Expenses.length; i++){
+        sum += this.Expenses[i]
+    }
+    return sum
+    }
+    accountInfo(){
+    return `${this.firstName}-${this.lastName} account with these income:${this.Incomes}, expenses:${this.Expenses} but a Total income of ${this.totalIncomes()} and Total expenses of ${this.totalExpenses()}`
+    }
+    addIncomes(addI){
+    this.Incomes.push(addI)
+    return this.Incomes
+    }
+    addExpenses(addE){
+    this.Expenses.push(addE)
+    return this.Expenses
+    }
+    addBalance(){
+   let balance = `${this.totalIncomes() - this.totalExpenses()}`
+   return balance
+}
+}
+
+const personAccounts = new PersonAccount(
+'Abraham',
+'Joe',
+[40000,40000,30000,50000],
+[1000,20000,5000])
+
+console.log(personAccounts.totalIncomes())
+console.log(personAccounts.totalExpenses())
+console.log(personAccounts.accountInfo())
+console.log(personAccounts.addIncomes(500000))
+console.log(personAccounts.addExpenses(160000))
+console.log(personAccounts.addBalance())
+    
+
