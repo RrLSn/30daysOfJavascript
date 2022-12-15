@@ -6,9 +6,6 @@ localStorage.setItem('age', 15)
 localStorage.setItem('country', 'Nigeria')
 localStorage.setItem('city', 'Lagos')
 
-console.log(localStorage)
-
-
 // Exercise 2
 // 1. Create a student object. The student object will have first name, last name, age, skills, country, enrolled keys and values for the keys. Store the student object in your browser localStorage.
 
@@ -23,7 +20,6 @@ const student = {
 
 let studentInfo = JSON.stringify(student, undefined, 4)
 localStorage.setItem('student', studentInfo)
-
 
 // Exercise 3
 // 1. Create an object called personAccount. It has firstname, lastname, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
@@ -54,3 +50,5 @@ const personAccount ={
 
 let newPersonInfo = JSON.stringify(personAccount,undefined,4)
 localStorage.setItem('personAccount', newPersonInfo)
+
+console.log(localStorage)
