@@ -71,3 +71,12 @@ console.log(getreplicavalues)
 // Getting object keys and values using Object.entries()
 const getentries = Object.entries(person)
 console.log(getentries)
+
+
+// Checking properties using hasOwnProperty()
+// this print true or false
+console.log(copyPerson.hasOwnProperty('name'))
+console.log(copyPerson.hasOwnProperty('firstName'))
+console.log(person.hasOwnProperty('skills'))
+console.log(person.hasOwnProperty('scores'))
+console.log(person.hasOwnProperty('getFullName'))
