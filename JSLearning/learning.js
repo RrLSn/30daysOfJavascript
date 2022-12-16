@@ -80,3 +80,38 @@ console.log(copyPerson.hasOwnProperty('firstName'))
 console.log(person.hasOwnProperty('skills'))
 console.log(person.hasOwnProperty('scores'))
 console.log(person.hasOwnProperty('getFullName'))
+
+
+// Property existence test, “in” operator
+console.log('age' in person)
+console.log('skills' in copyPerson)
+console.log('isMarried' in copyPerson)
+console.log('score' in person)
+
+/* Please note that on the left side of in there must be a property name. That’s usually a quoted string.
+
+If we omit quotes, that means a variable should contain the actual name to be tested. For instance: */
+
+const getProperty = 'country'
+console.log(getProperty in person)
+
+const getnewProperties = 'scores'
+console.log(getnewProperties in copyPerson)
+
+/* Why does the in operator exist? Isn’t it enough to compare against undefined?
+
+Well, most of the time the comparison with undefined works fine. But there’s a special case when it fails, but "in" works correctly.
+
+It’s when an object property exists, but stores undefined: */
+
+let obj = {
+  test: undefined
+};
+
+console.log( obj.test ); // it's undefined, so - no such property?
+
+console.log( "test" in obj )
+
+/* In the code above, the property obj.test technically exists. So the in operator works right.
+
+Situations like this happen very rarely, because undefined should not be explicitly assigned. We mostly use null for “unknown” or “empty” values. So the in operator is an exotic guest in the code. */
