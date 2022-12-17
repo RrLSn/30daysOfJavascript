@@ -56,3 +56,51 @@ fetchCatInfo()
 // Exercise 3
 // 1. Read the cats api and find the average weight of cat in metric unit.
 
+
+
+// 2. Read the countries api and find out the 10 largest countries
+
+// fetch(countriesAPI)
+// .then((response) => response.json())
+// .then((countries) => {
+//     let largestCountry = countries.sort((a,b), a-b)
+//     console.log(largestCountry)
+// })
+
+const largestPopulation = async () => {
+    try {
+        let firstTen = []
+        const response = await fetch(countriesAPI)
+        const populatedCountry = await response.json()
+        populatedCountry.filter((res) => {
+            firstTen.push(`${res.population}`)
+            result = firstTen.sort((a,b) => b-a)
+        })
+        console.log(result.slice(0,10))
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+largestPopulation()
+
+
+// 3. Read the countries api and count total number of languages in the world used as officials.
+
+const totalLanguages = async () => {
+    try {
+        let languages = []
+        const response = await fetch(countriesAPI)
+        const allLanguages = await response.json()
+        allLanguages.filter((res) => {
+            languages.push(`${res.languages[1]}`)
+            filt = languages.length
+        })
+        console.log(filt)
+        
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+totalLanguages()
