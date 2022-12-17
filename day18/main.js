@@ -11,3 +11,13 @@ fetch(countriesAPI)
     
 })
 
+
+// Exercise 2
+// Print out all the cat names in to catNames variable.
+fetch(catsAPI)
+.then((res) => res.json())
+.then((info) => {
+    let answer = info.map(i => i.name)
+    console.log(answer)
+})
+
