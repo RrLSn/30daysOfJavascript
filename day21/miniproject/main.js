@@ -22,6 +22,7 @@ spanEl.style.fontSize = '5rem';
 spanEl.style.fontWeight = 'bold'
 const rdcolor = () => {
     spanEl.style.color = '#'+ Math.random().toString(16).substr(2,6)
+    asideEl.style.background = '#'+ Math.random().toString(16).substr(2,6);
 }
 setInterval(rdcolor,1000)
 
@@ -61,10 +62,6 @@ asideEl.style.margin = 'auto';
 asideEl.style.padding = '0.5rem 1.5rem';
 asideEl.style.fontSize = '0.9rem';
 asideEl.style.fontWeight = 'bold';
-const rdbackground = () => {
-    asideEl.style.background = '#'+ Math.random().toString(16).substr(2,6);
-}
-setInterval(rdbackground,1000)
 
 const lisEl = document.querySelectorAll('li');
 
