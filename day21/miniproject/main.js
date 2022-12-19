@@ -1,7 +1,9 @@
 bodyEl = document.querySelector('body');
 bodyEl.style.width = '100vw';
+bodyEl.style.height = '100vh';
 bodyEl.style.fontFamily = 'segoe UI';
 bodyEl.style.cursor = 'pointer'
+bodyEl.style.overflow = 'hidden';
 
 wrappyEl = document.querySelector('.wrapper');
 wrappyEl.style.width = '50%';
