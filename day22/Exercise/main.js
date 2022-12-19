@@ -2,6 +2,7 @@ const bodyEl = document.querySelector('body')
 bodyEl.style.fontFamily = 'segoe UI'
 bodyEl.style.width = '100vw'
 bodyEl.style.cursor = 'pointer'
+bodyEl.style.overflowX = 'hidden'
 
 const h1El = document.createElement('h1')
 h1El.textContent = 'Number Generator'
