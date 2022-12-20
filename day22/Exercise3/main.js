@@ -312,7 +312,6 @@ newDivEl.style.gap = '1rem'
 newDivEl.style.marginTop = '3rem'
 
 const blkaEl = document.createElement('div')
-// blkaEl.style.lineHeight = '1rem'
 const blkaH1 = document.createElement('h1')
 blkaH1.textContent = 'Titles'
 blkaH1.style.fontSize = '1.5rem'
@@ -356,6 +355,13 @@ blkcEl.appendChild(blkcpEl)
 newDivEl.appendChild(blkcEl)
 
 mainEl.appendChild(newDivEl)
+
+const keyEl = document.createElement('h1')
+keyEl.textContent = 'Keywords'
+keyEl.style.fontSize = '1.5rem'
+keyEl.style.margin = '0 2rem'
+
+mainEl.appendChild(keyEl)
 
 
 
