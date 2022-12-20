@@ -48,8 +48,12 @@ function isPrime(n) {
         return false;
       }
     }
-    return true;
-  }
+    for (let i = 2; i < n; i++) {
+      if (n % i == 1) {
+        return true;
+      }
+  }    
+}
 
 for(let i=0; i<=101; i++){
     const pEl = document.createElement('p')
