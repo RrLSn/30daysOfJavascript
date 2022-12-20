@@ -1,6 +1,6 @@
 const asabenehChallenges2020 = {
     description: 'Asabeneh Yetayeh challenges',
-    challengeTitle: 'Asabeneh Yetayeh challenges',
+    challengeTitle: 'Asabeneh Yetayeh challenges in ',
     challengeSubtitle: '30DaysOfJavaScript Challenge',
     challengeYear: 2020,
     keywords: [
@@ -207,12 +207,12 @@ mainEl.style.width = '50%'
 mainEl.style.margin = 'auto'
 bodyEl.appendChild(mainEl)
 
-h1El = document.createElement('h1')
-h1El.textContent = 'Asabeneh Yatayeh challenges in '
+const h1El = document.createElement('h1')
+h1El.textContent = asabenehChallenges2020.challengeTitle
 h1El.style.fontWeight = '500'
 h1El.style.textAlign = 'center'
 
-spanEl = document.createElement('span')
+const spanEl = document.createElement('span')
 spanEl.textContent = '2020'
 spanEl.style.fontSize = '5rem'
 spanEl.style.fontWeight = '700'
@@ -287,5 +287,23 @@ for(i=0; i < liEl.length; i++){
     liEl[0].style.background = '#5bbc7a'
     liEl[1].style.background = '#f7dc5c'
 }
+
+
+const h3El = document.createElement('h3')
+h3El.textContent = asabenehChallenges2020.author.firstName + ' ' + asabenehChallenges2020.author.lastName
+h3El.style.textAlign = 'center'
+h3El.style.fontWeight = 'bold'
+h3El.style.fontSize = '2rem'
+mainEl.appendChild(h3El)
+
+const h1El2 = document.createElement('h1')
+h1El2.textContent = asabenehChallenges2020.author.bio
+h1El2.style.fontSize = '1rem'
+h1El2.style.fontWeight = '400'
+h1El2.style.width = '80%'
+h1El2.style.margin = 'auto'
+h1El2.style.textAlign = 'center'
+mainEl.appendChild(h1El2)
+
 
 
