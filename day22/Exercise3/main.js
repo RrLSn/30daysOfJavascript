@@ -271,7 +271,7 @@ setInterval(rdcolor,1000)
 mainEl.appendChild(pEl)
 
 const UEl = document.createElement('ul')
-for(i = 0; i < 7; i++){
+for(i = 0; i < 8; i++){
     const liEl = document.createElement('li')
     UEl.appendChild(liEl)
 }
@@ -281,7 +281,7 @@ mainEl.appendChild(UEl)
 const liEl = document.querySelectorAll('li')
 for(i=0; i < liEl.length; i++){
     liEl[i].style.background = '#eb695b'
-    liEl[i].style.marginBottom = '0.2rem'
+    liEl[i].style.marginBottom = '0.3rem'
     liEl[i].style.padding = '2rem'
     liEl[i].style.listStyle = 'none'
     liEl[0].style.background = '#5bbc7a'
@@ -304,6 +304,58 @@ h1El2.style.width = '80%'
 h1El2.style.margin = 'auto'
 h1El2.style.textAlign = 'center'
 mainEl.appendChild(h1El2)
+
+const newDivEl = document.createElement('div')
+newDivEl.style.display = 'grid'
+newDivEl.style.gridTemplateColumns = '1fr 1fr 1fr'
+newDivEl.style.gap = '1rem'
+newDivEl.style.marginTop = '3rem'
+
+const blkaEl = document.createElement('div')
+// blkaEl.style.lineHeight = '1rem'
+const blkaH1 = document.createElement('h1')
+blkaH1.textContent = 'Titles'
+blkaH1.style.fontSize = '1.5rem'
+
+const blkapEl = document.createElement('p')
+blkapEl.textContent = asabenehChallenges2020.author.titles
+
+/* for(i=0; i<5; i++){
+  const blkapEl = document.createElement('p')
+  blkapEl.textContent = asabenehChallenges2020.author.titles
+  blkaEl.appendChild(blkapEl)
+}*/
+
+blkaEl.appendChild(blkaH1)
+blkaEl.appendChild(blkapEl)
+newDivEl.appendChild(blkaEl)
+
+const blkbEl = document.createElement('div')
+const blkbH1 = document.createElement('h1')
+blkbH1.textContent = 'skills'
+blkbH1.style.fontSize = '1.5rem'
+
+const blkbpEl = document.createElement('p')
+blkbpEl.textContent = asabenehChallenges2020.author.skills
+
+blkbEl.appendChild(blkbH1)
+blkbEl.appendChild(blkbpEl)
+newDivEl.appendChild(blkbEl)
+
+const blkcEl = document.createElement('div')
+blkcEl.style.direction ='block'
+const blkcH1 = document.createElement('h1')
+blkcH1.textContent = 'Qualifications'
+blkcH1.style.fontSize = '1.5rem'
+
+const blkcpEl = document.createElement('p')
+blkcpEl.textContent = asabenehChallenges2020.author.qualifications
+
+blkcEl.appendChild(blkcH1)
+blkcEl.appendChild(blkcpEl)
+newDivEl.appendChild(blkcEl)
+
+mainEl.appendChild(newDivEl)
 
 
 
