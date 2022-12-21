@@ -59,7 +59,6 @@ for(let i=0; i<=101; i++){
     const pEl = document.createElement('p')
     pEl.textContent = i
     divEl.appendChild(pEl)
-    pEl.style.width = '100%'   
     pEl.style.height = '100%'
     pEl.style.color = 'white'
     pEl.style.display = 'flex'
