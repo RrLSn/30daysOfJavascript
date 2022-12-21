@@ -20,7 +20,7 @@ h2El.style.margin = 'auto'
 bodyEl.appendChild(h2El)
 
 const h3El =  document.createElement('h3')
-h3El.textContent = 'Author: Afolabi Sodiq'
+h3El.textContent = 'Author: Asabeneh Yetayeh'
 h3El.style.textDecoration = 'underline'
 h3El.style.margin = 'auto'
 h3El.style.fontWeight = '400'

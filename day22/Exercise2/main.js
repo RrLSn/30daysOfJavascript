@@ -225,7 +225,7 @@ h3El.style.width = 'max-content'
 bodyEl.appendChild(h3El)
 
 const h4El =  document.createElement('h3')
-h4El.textContent = 'Author: Afolabi Sodiq'
+h4El.textContent = 'Author: Asabeneh Yetayeh'
 h4El.style.margin = 'auto'
 h4El.style.fontWeight = '400'
 h4El.style.width = 'max-content'
