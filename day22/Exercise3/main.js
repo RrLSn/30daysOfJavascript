@@ -303,7 +303,6 @@ const detail1 = document.createElement('details')
 const summary1 = document.createElement('summary')
 summary1.textContent = asabenehChallenges2020.challenges[0].topics[0]
 
-// const sum1list = document.createElement('p')
 const optEl1 = document.createElement('p')
 optEl1.textContent = asabenehChallenges2020.challenges[0].topics[0]
 const optEl2 = document.createElement('p')
@@ -345,7 +344,6 @@ const detail2 = document.createElement('details')
 const summary2 = document.createElement('summary')
 summary2.textContent = asabenehChallenges2020.challenges[1].topics[0]
 
-// const sum2list = document.createElement('p')
 const opt2El1 = document.createElement('p')
 opt2El1.textContent = asabenehChallenges2020.challenges[1].topics[0]
 const opt2El2 = document.createElement('p')
@@ -385,7 +383,6 @@ const detail3 = document.createElement('details')
 const summary3 = document.createElement('summary')
 summary3.textContent = `HTML & ${asabenehChallenges2020.challenges[2].topics[0]}`
 
-// const sum3list = document.createElement('p')
 const opt3El1 = document.createElement('p')
 opt3El1.textContent = asabenehChallenges2020.challenges[2].topics[0]
 const opt3El2 = document.createElement('p')
@@ -425,7 +422,6 @@ const detail4 = document.createElement('details')
 const summary4 = document.createElement('summary')
 summary4.textContent = asabenehChallenges2020.challenges[3].topics[0]
 
-// const sum4list = document.createElement('p')
 const opt4El1 = document.createElement('p')
 opt4El1.textContent = asabenehChallenges2020.challenges[3].topics[0]
 const opt4El2 = document.createElement('p')
@@ -465,7 +461,6 @@ const detail5 = document.createElement('details')
 const summary5 = document.createElement('summary')
 summary5.textContent = asabenehChallenges2020.challenges[4].topics[0]
 
-// const sum4list = document.createElement('p')
 const opt5El1 = document.createElement('p')
 opt5El1.textContent = asabenehChallenges2020.challenges[3].topics[0]
 const opt5El2 = document.createElement('p')
@@ -506,7 +501,6 @@ const detail6 = document.createElement('details')
 const summary6 = document.createElement('summary')
 summary6.textContent = asabenehChallenges2020.challenges[5].name.slice(11,20)
 
-// const sum4list = document.createElement('p')
 const opt6El1 = document.createElement('p')
 opt6El1.textContent = asabenehChallenges2020.challenges[5].topics[0]
 const opt6El2 = document.createElement('p')
@@ -537,76 +531,156 @@ status6.textContent = asabenehChallenges2020.challenges[5].status
 liEl[5].appendChild(status6)
 
 
-// const h3El = document.createElement('h3')
-// h3El.textContent = asabenehChallenges2020.author.firstName + ' ' + asabenehChallenges2020.author.lastName
-// h3El.style.textAlign = 'center'
-// h3El.style.fontWeight = 'bold'
-// h3El.style.fontSize = '2rem'
-// mainEl.appendChild(h3El)
+// for seventh list
+const seventhList = document.createElement('p')
+seventhList.textContent = asabenehChallenges2020.challenges[6].name
+liEl[6].appendChild(seventhList)
 
-// const h1El2 = document.createElement('h1')
-// h1El2.textContent = asabenehChallenges2020.author.bio
-// h1El2.style.fontSize = '1rem'
-// h1El2.style.fontWeight = '400'
-// h1El2.style.width = '80%'
-// h1El2.style.margin = 'auto'
-// h1El2.style.textAlign = 'center'
-// mainEl.appendChild(h1El2)
+// for deatails and summary
+const detail7 = document.createElement('details')
+const summary7 = document.createElement('summary')
+summary7.textContent = asabenehChallenges2020.challenges[6].name.slice(11,24)
 
-// const newDivEl = document.createElement('div')
-// newDivEl.style.display = 'grid'
-// newDivEl.style.gridTemplateColumns = '1fr 1fr 1fr'
-// newDivEl.style.gap = '1rem'
-// newDivEl.style.marginTop = '3rem'
+const opt7El1 = document.createElement('p')
+opt7El1.textContent = asabenehChallenges2020.challenges[6].topics[0]
+const opt7El2 = document.createElement('p')
+opt7El2.textContent = asabenehChallenges2020.challenges[6].topics[1]
+const opt7El3 = document.createElement('p')
+opt7El3.textContent = asabenehChallenges2020.challenges[6].topics[2]
+const opt7El4 = document.createElement('p')
+opt7El4.textContent = asabenehChallenges2020.challenges[6].topics[3]
+const opt7El5 = document.createElement('p')
+opt7El5.textContent = asabenehChallenges2020.challenges[6].topics[4]
+const opt7El6 = document.createElement('p')
+opt7El6.textContent = asabenehChallenges2020.challenges[6].topics[5]
+const opt7El7 = document.createElement('p')
+opt7El7.textContent = asabenehChallenges2020.challenges[6].topics[6]
 
-// const blkaEl = document.createElement('div')
-// const blkaH1 = document.createElement('h1')
-// blkaH1.textContent = 'Titles'
-// blkaH1.style.fontSize = '1.5rem'
+detail7.append(summary7)
+detail7.appendChild(opt7El1)
+detail7.appendChild(opt7El2)
+detail7.appendChild(opt7El3)
+detail7.appendChild(opt7El4)
+detail7.appendChild(opt7El5)
+detail7.appendChild(opt7El6)
+detail7.appendChild(opt7El7)
+liEl[6].appendChild(detail7)
 
-// const blkapEl = document.createElement('p')
-// blkapEl.textContent = asabenehChallenges2020.author.titles
+const status7 = document.createElement('p')
+status7.textContent = asabenehChallenges2020.challenges[6].status
+liEl[6].appendChild(status7)
 
-// /* for(i=0; i<5; i++){
-//   const blkapEl = document.createElement('p')
-//   blkapEl.textContent = asabenehChallenges2020.author.titles
-//   blkaEl.appendChild(blkapEl)
-// }*/
 
-// blkaEl.appendChild(blkaH1)
-// blkaEl.appendChild(blkapEl)
-// newDivEl.appendChild(blkaEl)
+// for eighth list
+const eighthList = document.createElement('p')
+eighthList.textContent = asabenehChallenges2020.challenges[7].name
+liEl[7].appendChild(eighthList)
 
-// const blkbEl = document.createElement('div')
-// const blkbH1 = document.createElement('h1')
-// blkbH1.textContent = 'skills'
-// blkbH1.style.fontSize = '1.5rem'
+// for deatails and summary
+const detail8 = document.createElement('details')
+const summary8 = document.createElement('summary')
+summary8.textContent = asabenehChallenges2020.challenges[7].name.slice(11,27)
 
-// const blkbpEl = document.createElement('p')
-// blkbpEl.textContent = asabenehChallenges2020.author.skills
+const opt8El1 = document.createElement('p')
+opt8El1.textContent = asabenehChallenges2020.challenges[7].topics[0]
+const opt8El2 = document.createElement('p')
+opt8El2.textContent = asabenehChallenges2020.challenges[7].topics[1]
+const opt8El3 = document.createElement('p')
+opt8El3.textContent = asabenehChallenges2020.challenges[7].topics[2]
+const opt8El4 = document.createElement('p')
+opt8El4.textContent = asabenehChallenges2020.challenges[7].topics[3]
+const opt8El5 = document.createElement('p')
+opt8El5.textContent = asabenehChallenges2020.challenges[7].topics[4]
+const opt8El6 = document.createElement('p')
+opt8El6.textContent = asabenehChallenges2020.challenges[7].topics[5]
+const opt8El7 = document.createElement('p')
+opt8El7.textContent = asabenehChallenges2020.challenges[7].topics[6]
 
-// blkbEl.appendChild(blkbH1)
-// blkbEl.appendChild(blkbpEl)
-// newDivEl.appendChild(blkbEl)
+detail8.append(summary8)
+detail8.appendChild(opt8El1)
+detail8.appendChild(opt8El2)
+detail8.appendChild(opt8El3)
+detail8.appendChild(opt8El4)
+detail8.appendChild(opt8El5)
+detail8.appendChild(opt8El6)
+detail8.appendChild(opt8El7)
+liEl[7].appendChild(detail8)
 
-// const blkcEl = document.createElement('div')
-// blkcEl.style.direction ='block'
-// const blkcH1 = document.createElement('h1')
-// blkcH1.textContent = 'Qualifications'
-// blkcH1.style.fontSize = '1.5rem'
+const status8 = document.createElement('p')
+status8.textContent = asabenehChallenges2020.challenges[7].status
+liEl[7].appendChild(status8)
 
-// const blkcpEl = document.createElement('p')
-// blkcpEl.textContent = asabenehChallenges2020.author.qualifications
 
-// blkcEl.appendChild(blkcH1)
-// blkcEl.appendChild(blkcpEl)
-// newDivEl.appendChild(blkcEl)
+const h3El = document.createElement('h3')
+h3El.textContent = asabenehChallenges2020.author.firstName + ' ' + asabenehChallenges2020.author.lastName
+h3El.style.textAlign = 'center'
+h3El.style.fontWeight = 'bold'
+h3El.style.fontSize = '2rem'
+mainEl.appendChild(h3El)
 
-// mainEl.appendChild(newDivEl)
+const h1El2 = document.createElement('h1')
+h1El2.textContent = asabenehChallenges2020.author.bio
+h1El2.style.fontSize = '1rem'
+h1El2.style.fontWeight = '400'
+h1El2.style.width = '80%'
+h1El2.style.margin = 'auto'
+h1El2.style.textAlign = 'center'
+mainEl.appendChild(h1El2)
 
-// const keyEl = document.createElement('h1')
-// keyEl.textContent = 'Keywords'
-// keyEl.style.fontSize = '1.5rem'
-// keyEl.style.margin = '0 2rem'
+const newDivEl = document.createElement('div')
+newDivEl.style.display = 'grid'
+newDivEl.style.gridTemplateColumns = '1fr 1fr 1fr'
+newDivEl.style.gap = '1rem'
+newDivEl.style.marginTop = '3rem'
 
-// mainEl.appendChild(keyEl)
+const blkaEl = document.createElement('div')
+const blkaH1 = document.createElement('h1')
+blkaH1.textContent = 'Titles'
+blkaH1.style.fontSize = '1.5rem'
+
+const blkapEl = document.createElement('p')
+blkapEl.textContent = asabenehChallenges2020.author.titles
+
+/* for(i=0; i<5; i++){
+  const blkapEl = document.createElement('p')
+  blkapEl.textContent = asabenehChallenges2020.author.titles
+  blkaEl.appendChild(blkapEl)
+}*/
+
+blkaEl.appendChild(blkaH1)
+blkaEl.appendChild(blkapEl)
+newDivEl.appendChild(blkaEl)
+
+const blkbEl = document.createElement('div')
+const blkbH1 = document.createElement('h1')
+blkbH1.textContent = 'skills'
+blkbH1.style.fontSize = '1.5rem'
+
+const blkbpEl = document.createElement('p')
+blkbpEl.textContent = asabenehChallenges2020.author.skills
+
+blkbEl.appendChild(blkbH1)
+blkbEl.appendChild(blkbpEl)
+newDivEl.appendChild(blkbEl)
+
+const blkcEl = document.createElement('div')
+blkcEl.style.direction ='block'
+const blkcH1 = document.createElement('h1')
+blkcH1.textContent = 'Qualifications'
+blkcH1.style.fontSize = '1.5rem'
+
+const blkcpEl = document.createElement('p')
+blkcpEl.textContent = asabenehChallenges2020.author.qualifications
+
+blkcEl.appendChild(blkcH1)
+blkcEl.appendChild(blkcpEl)
+newDivEl.appendChild(blkcEl)
+
+mainEl.appendChild(newDivEl)
+
+const keyEl = document.createElement('h1')
+keyEl.textContent = 'Keywords'
+keyEl.style.fontSize = '1.5rem'
+keyEl.style.margin = '0 2rem'
+
+mainEl.appendChild(keyEl)
