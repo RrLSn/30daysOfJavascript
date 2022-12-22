@@ -282,12 +282,12 @@ const liEl = document.querySelectorAll('li')
 for(i=0; i < liEl.length; i++){
     liEl[i].style.background = '#eb695b'
     liEl[i].style.marginBottom = '0.3rem'
-    liEl[i].style.padding = '1rem'
-    // liEl[i].style.listStyle = 'none'
+    liEl[i].style.padding = '0.5rem 2rem'
+    liEl[i].style.listStyle = 'none'
     liEl[0].style.background = '#5bbc7a'
-    liEl[0].style.display = 'flex'
-    liEl[0].style.alignItems = 'center'
-    liEl[0].style.justifyContent = 'space-between'
+    liEl[i].style.display = 'flex'
+    liEl[i].style.alignItems = 'center'
+    liEl[i].style.justifyContent = 'space-between'
     liEl[1].style.background = '#f7dc5c'
 }
 
@@ -298,23 +298,243 @@ firstList.style.textDecoration = 'underline'
 firstList.style.color = 'purple'
 liEl[0].appendChild(firstList)
 
-
+// for details with its summary 
 const detail1 = document.createElement('details')
 const summary1 = document.createElement('summary')
 summary1.textContent = asabenehChallenges2020.challenges[0].topics[0]
+
+// const sum1list = document.createElement('p')
+const optEl1 = document.createElement('p')
+optEl1.textContent = asabenehChallenges2020.challenges[0].topics[0]
+const optEl2 = document.createElement('p')
+optEl2.textContent = asabenehChallenges2020.challenges[0].topics[1]
+const optEl3 = document.createElement('p')
+optEl3.textContent = asabenehChallenges2020.challenges[0].topics[2]
+const optEl4 = document.createElement('p')
+optEl4.textContent = asabenehChallenges2020.challenges[0].topics[3]
+const optEl5 = document.createElement('p')
+optEl5.textContent = asabenehChallenges2020.challenges[0].topics[4]
+const optEl6 = document.createElement('p')
+optEl6.textContent = asabenehChallenges2020.challenges[0].topics[5]
+const optEl7 = document.createElement('p')
+optEl7.textContent = asabenehChallenges2020.challenges[0].topics[6]
+
 detail1.append(summary1)
-
-const sum1list = document.createElement('p')
-for(i=0; i<=asabenehChallenges2020.challenges[0].topics.length; i++){
-  console.log(sum1list.textContent = asabenehChallenges2020.challenges[0].topics[i])
-}
-detail1.appendChild(sum1list)
-
+detail1.appendChild(optEl1)
+detail1.appendChild(optEl2)
+detail1.appendChild(optEl3)
+detail1.appendChild(optEl4)
+detail1.appendChild(optEl5)
+detail1.appendChild(optEl6)
+detail1.appendChild(optEl7)
 liEl[0].appendChild(detail1)
-
+ 
 const status1 = document.createElement('p')
 status1.textContent = asabenehChallenges2020.challenges[0].status
 liEl[0].appendChild(status1)
+
+// for second list
+const secondList = document.createElement('p')
+secondList.textContent = asabenehChallenges2020.challenges[1].name
+secondList.style.textDecoration = 'underline'
+secondList.style.color = 'purple'
+liEl[1].appendChild(secondList)
+
+// for deatails and summary
+const detail2 = document.createElement('details')
+const summary2 = document.createElement('summary')
+summary2.textContent = asabenehChallenges2020.challenges[1].topics[0]
+
+// const sum2list = document.createElement('p')
+const opt2El1 = document.createElement('p')
+opt2El1.textContent = asabenehChallenges2020.challenges[1].topics[0]
+const opt2El2 = document.createElement('p')
+opt2El2.textContent = asabenehChallenges2020.challenges[1].topics[1]
+const opt2El3 = document.createElement('p')
+opt2El3.textContent = asabenehChallenges2020.challenges[1].topics[2]
+const opt2El4 = document.createElement('p')
+opt2El4.textContent = asabenehChallenges2020.challenges[1].topics[3]
+const opt2El5 = document.createElement('p')
+opt2El5.textContent = asabenehChallenges2020.challenges[1].topics[4]
+const opt2El6 = document.createElement('p')
+opt2El6.textContent = asabenehChallenges2020.challenges[1].topics[5]
+const opt2El7 = document.createElement('p')
+opt2El7.textContent = asabenehChallenges2020.challenges[1].topics[6]
+
+detail2.append(summary2)
+detail2.appendChild(opt2El1)
+detail2.appendChild(opt2El2)
+detail2.appendChild(opt2El3)
+detail2.appendChild(opt2El4)
+detail2.appendChild(opt2El5)
+detail2.appendChild(opt2El6)
+detail2.appendChild(opt2El7)
+liEl[1].appendChild(detail2)
+
+const status2 = document.createElement('p')
+status2.textContent = asabenehChallenges2020.challenges[1].status
+liEl[1].appendChild(status2)
+
+// for third list
+const thirdList = document.createElement('p')
+thirdList.textContent = asabenehChallenges2020.challenges[2].name
+liEl[2].appendChild(thirdList)
+
+// for deatails and summary
+const detail3 = document.createElement('details')
+const summary3 = document.createElement('summary')
+summary3.textContent = `HTML & ${asabenehChallenges2020.challenges[2].topics[0]}`
+
+// const sum3list = document.createElement('p')
+const opt3El1 = document.createElement('p')
+opt3El1.textContent = asabenehChallenges2020.challenges[2].topics[0]
+const opt3El2 = document.createElement('p')
+opt3El2.textContent = asabenehChallenges2020.challenges[2].topics[1]
+const opt3El3 = document.createElement('p')
+opt3El3.textContent = asabenehChallenges2020.challenges[2].topics[2]
+const opt3El4 = document.createElement('p')
+opt3El4.textContent = asabenehChallenges2020.challenges[2].topics[3]
+const opt3El5 = document.createElement('p')
+opt3El5.textContent = asabenehChallenges2020.challenges[2].topics[4]
+const opt3El6 = document.createElement('p')
+opt3El6.textContent = asabenehChallenges2020.challenges[2].topics[5]
+const opt3El7 = document.createElement('p')
+opt3El7.textContent = asabenehChallenges2020.challenges[2].topics[6]
+
+detail3.append(summary3)
+detail3.appendChild(opt3El1)
+detail3.appendChild(opt3El2)
+detail3.appendChild(opt3El3)
+detail3.appendChild(opt3El4)
+detail3.appendChild(opt3El5)
+detail3.appendChild(opt3El6)
+detail3.appendChild(opt3El7)
+liEl[2].appendChild(detail3)
+
+const status3 = document.createElement('p')
+status3.textContent = asabenehChallenges2020.challenges[2].status
+liEl[2].appendChild(status3)
+
+// for fourth list
+const fourthList = document.createElement('p')
+fourthList.textContent = asabenehChallenges2020.challenges[3].name
+liEl[3].appendChild(fourthList)
+
+// for deatails and summary
+const detail4 = document.createElement('details')
+const summary4 = document.createElement('summary')
+summary4.textContent = asabenehChallenges2020.challenges[3].topics[0]
+
+// const sum4list = document.createElement('p')
+const opt4El1 = document.createElement('p')
+opt4El1.textContent = asabenehChallenges2020.challenges[3].topics[0]
+const opt4El2 = document.createElement('p')
+opt4El2.textContent = asabenehChallenges2020.challenges[3].topics[1]
+const opt4El3 = document.createElement('p')
+opt4El3.textContent = asabenehChallenges2020.challenges[3].topics[2]
+const opt4El4 = document.createElement('p')
+opt4El4.textContent = asabenehChallenges2020.challenges[3].topics[3]
+const opt4El5 = document.createElement('p')
+opt4El5.textContent = asabenehChallenges2020.challenges[3].topics[4]
+const opt4El6 = document.createElement('p')
+opt4El6.textContent = asabenehChallenges2020.challenges[3].topics[5]
+const opt4El7 = document.createElement('p')
+opt4El7.textContent = asabenehChallenges2020.challenges[3].topics[6]
+
+detail4.append(summary4)
+detail4.appendChild(opt4El1)
+detail4.appendChild(opt4El2)
+detail4.appendChild(opt4El3)
+detail4.appendChild(opt4El4)
+detail4.appendChild(opt4El5)
+detail4.appendChild(opt4El6)
+detail4.appendChild(opt4El7)
+liEl[3].appendChild(detail4)
+
+const status4 = document.createElement('p')
+status4.textContent = asabenehChallenges2020.challenges[3].status
+liEl[3].appendChild(status4)
+
+// for fifth list
+const fifthList = document.createElement('p')
+fifthList.textContent = asabenehChallenges2020.challenges[4].name
+liEl[4].appendChild(fifthList)
+
+// for deatails and summary
+const detail5 = document.createElement('details')
+const summary5 = document.createElement('summary')
+summary5.textContent = asabenehChallenges2020.challenges[4].topics[0]
+
+// const sum4list = document.createElement('p')
+const opt5El1 = document.createElement('p')
+opt5El1.textContent = asabenehChallenges2020.challenges[3].topics[0]
+const opt5El2 = document.createElement('p')
+opt5El2.textContent = asabenehChallenges2020.challenges[3].topics[1]
+const opt5El3 = document.createElement('p')
+opt5El3.textContent = asabenehChallenges2020.challenges[3].topics[2]
+const opt5El4 = document.createElement('p')
+opt5El4.textContent = asabenehChallenges2020.challenges[3].topics[3]
+const opt5El5 = document.createElement('p')
+opt5El5.textContent = asabenehChallenges2020.challenges[3].topics[4]
+const opt5El6 = document.createElement('p')
+opt5El6.textContent = asabenehChallenges2020.challenges[3].topics[5]
+const opt5El7 = document.createElement('p')
+opt5El7.textContent = asabenehChallenges2020.challenges[3].topics[6]
+
+detail5.append(summary5)
+detail5.appendChild(opt5El1)
+detail5.appendChild(opt5El2)
+detail5.appendChild(opt5El3)
+detail5.appendChild(opt5El4)
+detail5.appendChild(opt5El5)
+detail5.appendChild(opt5El6)
+detail5.appendChild(opt5El7)
+liEl[4].appendChild(detail5)
+
+const status5 = document.createElement('p')
+status5.textContent = asabenehChallenges2020.challenges[4].status
+liEl[4].appendChild(status5)
+
+
+// for sixth list
+const sixthList = document.createElement('p')
+sixthList.textContent = asabenehChallenges2020.challenges[5].name
+liEl[5].appendChild(sixthList)
+
+// for deatails and summary
+const detail6 = document.createElement('details')
+const summary6 = document.createElement('summary')
+summary6.textContent = asabenehChallenges2020.challenges[5].name.slice(11,20)
+
+// const sum4list = document.createElement('p')
+const opt6El1 = document.createElement('p')
+opt6El1.textContent = asabenehChallenges2020.challenges[5].topics[0]
+const opt6El2 = document.createElement('p')
+opt6El2.textContent = asabenehChallenges2020.challenges[5].topics[1]
+const opt6El3 = document.createElement('p')
+opt6El3.textContent = asabenehChallenges2020.challenges[5].topics[2]
+const opt6El4 = document.createElement('p')
+opt6El4.textContent = asabenehChallenges2020.challenges[5].topics[3]
+const opt6El5 = document.createElement('p')
+opt6El5.textContent = asabenehChallenges2020.challenges[5].topics[4]
+const opt6El6 = document.createElement('p')
+opt6El6.textContent = asabenehChallenges2020.challenges[5].topics[5]
+const opt6El7 = document.createElement('p')
+opt6El7.textContent = asabenehChallenges2020.challenges[5].topics[6]
+
+detail6.append(summary6)
+detail6.appendChild(opt6El1)
+detail6.appendChild(opt6El2)
+detail6.appendChild(opt6El3)
+detail6.appendChild(opt6El4)
+detail6.appendChild(opt6El5)
+detail6.appendChild(opt6El6)
+detail6.appendChild(opt6El7)
+liEl[5].appendChild(detail6)
+
+const status6 = document.createElement('p')
+status6.textContent = asabenehChallenges2020.challenges[5].status
+liEl[5].appendChild(status6)
 
 
 // const h3El = document.createElement('h3')
