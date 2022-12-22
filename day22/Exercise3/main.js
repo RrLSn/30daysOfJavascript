@@ -641,12 +641,6 @@ blkaH1.style.fontSize = '1.5rem'
 const blkapEl = document.createElement('p')
 blkapEl.textContent = asabenehChallenges2020.author.titles
 
-/* for(i=0; i<5; i++){
-  const blkapEl = document.createElement('p')
-  blkapEl.textContent = asabenehChallenges2020.author.titles
-  blkaEl.appendChild(blkapEl)
-}*/
-
 blkaEl.appendChild(blkaH1)
 blkaEl.appendChild(blkapEl)
 newDivEl.appendChild(blkaEl)
@@ -683,4 +677,12 @@ keyEl.textContent = 'Keywords'
 keyEl.style.fontSize = '1.5rem'
 keyEl.style.margin = '0 2rem'
 
+const keyPEl = document.createElement('p')
+for(i=0; i<asabenehChallenges2020.keywords.length; i++){
+  keyPEl.textContent = keywords[i]
+}
+keyEl.appendChild(keyPEl)
+
 mainEl.appendChild(keyEl)
+
+// console.log(asabenehChallenges2020.keywords.length) 35
