@@ -19,21 +19,33 @@ bodyEl.appendChild(titleEl)
 bodyEl.appendChild(subtiEl)
 bodyEl.appendChild(authorEl)
 
+// const warningEl = document.createElement('p')
+// function warning () {
+//   if(inputEl.textContent !== Number){
+//     return warningEl.textContent = ''
+//   }
+// }
+// bodyEl.append(warningEl)
+
 const divEl = document.createElement('div')
 divEl.style.display = 'flex'
-divEl.style.width = '65%'
+divEl.style.width = '60%'
 divEl.style.height = '2.5rem'
 divEl.style.margin = 'auto'
-divEl.style.gap = '1rem'
+divEl.style.marginBottom = '2rem'
+divEl.style.gap = '0.5rem'
 
 const inputEl = document.createElement('input')
 inputEl.style.width = '41rem'
 inputEl.style.border = '0.1rem solid #5bbc7a'
 inputEl.style.cursor = 'pointer'
+inputEl.placeholder = 'Generate more numbers...'
+inputEl.style.paddingLeft = '0.7rem'
+
 divEl.appendChild(inputEl)
 
 const generateEl = document.createElement('div')
-generateEl.style.width = '10rem'
+generateEl.style.width = '11rem'
 generateEl.textContent = 'Generate numbers'
 generateEl.style.background = '#5bbc7a'
 generateEl.style.color = '#fff'
@@ -47,6 +59,8 @@ bodyEl.append(divEl)
 
 const mainEl = document.createElement('div')
 mainEl.style.display = 'grid'
+mainEl.style.width = '80%'
+mainEl.style.margin = 'auto'
 mainEl.style.gridTemplateColumns = 'repeat(9, 1fr)'
 mainEl.style.gridGap = '0.5rem'
 
@@ -73,6 +87,8 @@ for(i=0; i<=1000; i++){
     const numberEl = document.createElement('p')
     numberEl.textContent = i
     numberEl.style.height = '100%'
+    numberEl.style.width = '100%'
+    numberEl.style.margin = '0'
     numberEl.style.color = '#ffffff'
     numberEl.style.fontSize = '2rem'
     numberEl.style.display = 'flex'
