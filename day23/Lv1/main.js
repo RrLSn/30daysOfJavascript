@@ -26,19 +26,15 @@ bodyEl.appendChild(titleEl)
 bodyEl.appendChild(subtiEl)
 bodyEl.appendChild(authorEl)
 
-// const warningEl = document.createElement('p')
-// function warning () {
-//   if(inputEl.textContent !== Number){
-//     return warningEl.textContent = ''
-//   }
-// }
-// bodyEl.append(warningEl)
+const warning = document.createElement('p')
+warning.style.color = 'red'
+bodyEl.append(warning)
 
 const divEl = document.createElement('div')
 divEl.style.display = 'flex'
 divEl.style.width = '60%'
 divEl.style.height = '2.5rem'
-divEl.style.margin = '2rem auto'
+divEl.style.margin = '0 auto 2rem'
 divEl.style.gap = '0.5rem'
 
 const inputEl = document.createElement('input')
@@ -47,6 +43,7 @@ inputEl.style.border = '0.1rem solid #5bbc7a'
 inputEl.style.cursor = 'pointer'
 inputEl.placeholder = 'Generate more numbers...'
 inputEl.style.paddingLeft = '0.7rem'
+inputEl.style.outline = 'none'
 
 divEl.appendChild(inputEl)
 
@@ -90,26 +87,41 @@ function isPrime(n) {
   }    
 }
 
-for(i=0; i<=1000; i++){
-    const numberEl = document.createElement('p')
-    numberEl.textContent = i
-    numberEl.style.height = '100%'
-    numberEl.style.width = '100%'
-    numberEl.style.margin = '0'
-    numberEl.style.color = '#ffffff'
-    numberEl.style.fontSize = '2rem'
-    numberEl.style.display = 'flex'
-    numberEl.style.justifyContent = 'center'
-    numberEl.style.fontWeight = 'bold'
-    numberEl.style.alignItems = 'center'
-    if(i%2 === 0){
-        numberEl.style.background = '#5bbc7a'
-    }else if(isPrime(i)){
-        numberEl.style.background = 'red'
-    } else{
-        numberEl.style.background = 'yellow'
+generateEl.addEventListener(
+  'click',
+  (generator = () => {
+    mainEl.innerHTML = ' '
+    if(inputEl.value === ''){
+     warning.textContent = 'Enter a number value in the input field to generate number'
     }
-    mainEl.appendChild(numberEl)
-}
+    else if(inputEl.value.match(/[a-zA-Z]/)){
+      warning.textContent = 'Input must be a Number'
+    }
+    else{
+      mainEl.innerHTML = ' '
+      for(i=0; i<=inputEl.value; i++){
+        const numberEl = document.createElement('p')
+        numberEl.textContent = i
+        numberEl.style.height = '100%'
+        numberEl.style.width = '100%'
+        numberEl.style.margin = '0'
+        numberEl.style.color = '#ffffff'
+        numberEl.style.fontSize = '2rem'
+        numberEl.style.display = 'flex'
+        numberEl.style.justifyContent = 'center'
+        numberEl.style.fontWeight = 'bold'
+        numberEl.style.alignItems = 'center'
+        if(i%2 === 0){
+            numberEl.style.background = '#5bbc7a'
+        }else if(isPrime(i)){
+            numberEl.style.background = 'red'
+        } else{
+            numberEl.style.background = 'yellow'
+        }
+        mainEl.appendChild(numberEl)
+    }
+    }
+  })
+)
 
 bodyEl.append(mainEl)
