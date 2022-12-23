@@ -6,14 +6,21 @@ bodyEl.style.textAlign = 'center'
 
 const titleEl = document.createElement('h1')
 titleEl.textContent = 'Number Generator'
-titleEl.style.fontWeight = '500'
+titleEl.style.fontWeight = 'bold'
 titleEl.style.color = '#5bbc7a'
+titleEl.style.margin = 'auto'
 
 const subtiEl = document.createElement('p')
 subtiEl.textContent = '30DaysOfJavaScript:DOM DAY 3'
+subtiEl.style.fontSize = '1.5rem'
+subtiEl.style.fontWeight = '500'
+subtiEl.style.margin = 'auto'
+
 
 const authorEl = document.createElement('p')
-authorEl.textContent = 'Asabeneh Yetayeh'
+authorEl.textContent = 'Author: Asabeneh Yetayeh'
+authorEl.style.fontWeight = '600'
+authorEl.style.margin = 'auto'
 
 bodyEl.appendChild(titleEl)
 bodyEl.appendChild(subtiEl)
@@ -31,8 +38,7 @@ const divEl = document.createElement('div')
 divEl.style.display = 'flex'
 divEl.style.width = '60%'
 divEl.style.height = '2.5rem'
-divEl.style.margin = 'auto'
-divEl.style.marginBottom = '2rem'
+divEl.style.margin = '2rem auto'
 divEl.style.gap = '0.5rem'
 
 const inputEl = document.createElement('input')
@@ -44,11 +50,12 @@ inputEl.style.paddingLeft = '0.7rem'
 
 divEl.appendChild(inputEl)
 
-const generateEl = document.createElement('div')
+const generateEl = document.createElement('button')
 generateEl.style.width = '11rem'
 generateEl.textContent = 'Generate numbers'
 generateEl.style.background = '#5bbc7a'
 generateEl.style.color = '#fff'
+generateEl.style.border = 'none'
 generateEl.style.display = 'flex'
 generateEl.style.alignItems = 'center'
 generateEl.style.justifyContent = 'center'
