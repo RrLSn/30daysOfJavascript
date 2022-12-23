@@ -80,7 +80,7 @@ for(i=0; i<=1000; i++){
     numberEl.style.fontWeight = 'bold'
     numberEl.style.alignItems = 'center'
     if(i%2 === 0){
-        numberEl.style.background = 'green'
+        numberEl.style.background = '#5bbc7a'
     }else if(isPrime(i)){
         numberEl.style.background = 'red'
     } else{
