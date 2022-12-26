@@ -625,9 +625,9 @@ social.style.justifyContent = 'space-between'
 social.style.width = '30%'
 social.style.margin = '0 auto 1rem'
 for(i=0; i<3; i++){
-const iconSocio = document.createElement('span')
-iconSocio.innerHTML = asabenehChallenges2020.author.socialLinks[i].social
-social.appendChild(iconSocio)
+const iconSocio = document.createElement('img')
+iconSocio.src = asabenehChallenges2020.author.socialLinks[i].fontawesomeIcon
+console.log(social.appendChild(iconSocio))
 }
 mainEl.appendChild(social)
 
